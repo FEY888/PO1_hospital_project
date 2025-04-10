@@ -1,0 +1,1551 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>나을한방병원</title>
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- 폰트어썸 불러오기 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- 스와이퍼 불러오기 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- 테일윈드 불러오기 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="./style/common.css">
+    <link rel="stylesheet" href="./style/index.css" />
+    <script defer src="./js/main.js"></script>
+  </head>
+  <body>
+
+    <!-- 모바일 퀵메뉴 및 스크롤 top -->
+<div class="mo-real-scroll-box hidden">
+	<div class="mo-scroll-menu-box">
+		<ul class="mo-scroll-dep1">
+			<li class="mo-quick-btn">
+				<span>
+					<img src="images/sns카카오톡.png" alt="모바일 side 카카오톡 상담이미지">
+
+				</span>
+			</li>
+			<li class="mo-youtube-btn">
+				<a href="https://www.youtube.com/@Naeul-haniwon/videos" target="_blank"><span>
+						<img src="images/유튜브이미지.png" alt="모바일 side유튜브이미지">
+
+					</span></a>
+			</li>
+			<li class="mo-blog-btn">
+				<a href="https://blog.naver.com/naeul_hani" target="_blank"><span><img src="images/네이버블로그.png" alt="나을한방병원블로그">
+
+					</span></a>
+
+			</li>
+			<li class="mo-side-top-quick-menu">
+				<span>
+
+					MENU+
+				</span>
+			</li>
+
+			<li class="mo-scroll-top-btn">
+				<span class="mo-top-font">
+					TOP
+				</span>
+
+			</li>
+		</ul>
+	</div>
+</div>
+
+<!-- 퀵메뉴 및 스크롤 top -->
+<div class="scroll-menu-box">
+	<ul class="scroll-dep1">
+		<li class="quick-btn">
+			<span>
+				<img src="images/빠른상담.png" alt="상담예약">
+				상담예약
+			</span>
+		</li>
+		<li class="d">
+			<span>
+				<img src="images/sns카카오톡.png" alt="카카오톡 상담">
+				카톡상담
+			</span>
+		</li>
+		<li class="youtube-btn">
+			<a href="https://www.youtube.com/@Naeul-haniwon/videos" target="_blank"><span>
+					<img src="images/유튜브이미지.png" alt="유튜브로 이동">
+					유튜브
+				</span></a>
+		</li>
+		<li class="blog-btn">
+			<a href="https://blog.naver.com/naeul_hani" target="_blank"><span><img src="images/네이버블로그.png" alt="나을한방병원블로그">
+					블로그
+				</span></a>
+
+		</li>
+		<li class="scroll-top-btn">
+			<span class="top-font">
+				TOP
+			</span>
+
+		</li>
+	</ul>
+</div>
+<!-- 사이트맵 메뉴 -->
+<div class="site-map-wrap">
+	<div class="site-maps">
+		<div class="map__close-btn">
+			<div class="close close-1"></div>
+			<div class="close close-2"></div>
+		</div>
+		<div class="site-map-tit">
+			<h1 class="site-txt">사이트맵</h1>
+		</div>
+		<div class="map-top-menu-box">
+			<nav class="map__menu-1">
+				<ul class="flex list-1">
+					<li>
+						<a href="#">병원소개
+							<div class="screen">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</a>
+						<ul class="list-2">
+							<li><a href="#">병원 층별안내</a></li>
+							<li><a href="pages/facility.html">시설안내</a></li>
+							<li><a href="#">비급여항목</a></li>
+							<li><a href="#">오시는길</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="pages/facility.html">시설소개
+							<div class="screen">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</a>
+
+						<ul class="list-2">
+							<li><a href="pages/facility.html">시설둘러보기</a></li>
+							<li><a href="pages/facility.html">의료기기/장비</a></li>
+
+						</ul>
+					</li>
+					<li>
+						<a href="pages/subjects.html">진료안내
+							<div class="screen">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</a>
+						<ul class="list-2">
+							<li><a href="pages/subjects.html">진료과목</a></li>
+							<li><a href="pages/subjects.html">진료시간</a></li>
+
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="middle-line"></div>
+		<div class="map-bottom-menu-box">
+			<nav class="map__menu-2">
+				<ul class="flex list-4">
+					<li>
+						<a href="pages/doctors.html">의료진소개
+							<div class="screen">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</a>
+						<ul class="list-5">
+							<li><a href="pages/doctors.html">담당진료분야</a></li>
+							<li><a href="pages/doctors.html">약력</a></li>
+
+						</ul>
+					</li>
+					<li>
+						<a href="#">전문클리닉
+							<div class="screen">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</a>
+						<ul class="list-5">
+							<li><a href="#">약침</a></li>
+							<li><a href="#">태반약침</a></li>
+							<li><a href="#">통증치료</a></li>
+							<li><a href="#">추나요법</a></li>
+							<li><a href="#">디스크치료</a></li>
+							<li><a href="#">만성질환</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">한약안내
+							<div class="screen">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</a>
+						<ul class="list-5">
+							<li><a href="#">건강보험첩약</a></li>
+							<li><a href="#">자동차보험첩약</a></li>
+							<li><a href="#">체질맞춤한약</a></li>
+							<li><a href="#">다이어트한약</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+
+<div id="wrap">
+	<div class="pc__top-bar-warp">
+
+		<header class="top-bar">
+			<div class="top-bar-con mx-auto h-[120px] flex">
+				<div class="naeul-logo-box w-[230px] h-full flex items-center">
+					<a href="index.html" class="logo flex">
+						<img class="logo-img" src="images/naeullogo.PNG" alt="나을한방병원로고">
+					</a>
+				</div>
+
+				<nav class="top-bar__menu">
+
+					<ul class="depth1 flex">
+						<div class="con mx-auto"></div>
+						<li>
+							<a href="pages/facility.html">병원소개</a>
+
+							<ul class="depth2">
+								<li><a href="#">병원 층별안내</a></li>
+								<li><a href="pages/facility.html">시설안내</a></li>
+								<li><a href="#">비급여항목</a></li>
+								<li><a href="#">오시는 길</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="pages/facility.html">시설소개</a>
+
+							<ul class="depth2">
+								<li><a href="pages/facility.html">시설둘러보기</a></li>
+								<li><a href="pages/facility.html">의료기기/장비</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="pages/doctors.html">의료진소개</a>
+
+							<ul class="depth2">
+								<li><a href="pages/doctors.html">전문진료과</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="pages/subjects.html">진료안내</a>
+
+							<ul class="depth2">
+								<li><a href="pages/subjects.html">진료과목</a></li>
+								<li><a href="pages/subjects.html">진료시간</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">전문클리닉</a>
+
+							<ul class="depth2">
+								<li><a href="#">대용량약침</a></li>
+								<li><a href="#">태반약침</a></li>
+								<li><a href="#">통증치료</a></li>
+								<li><a href="#">추나요법</a></li>
+								<li><a href="#">디스크치료</a></li>
+								<li><a href="#">만성질환</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">한약정보</a>
+
+							<ul class="depth2">
+								<li><a href="#">건강보험첩약</a></li>
+								<li><a href="#">자동차보험첩약</a></li>
+								<li><a href="#">체질맞춤한약</a></li>
+								<li><a href="#">다이어트한약</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">커뮤니티</a>
+
+							<ul class="depth2">
+								<li><a href="#">치료후기</a></li>
+								<li><a href="#">온라인상담</a></li>
+								<li><a href="#">병원소식</a></li>
+
+							</ul>
+
+						</li>
+					</ul>
+
+				</nav>
+				<div class="top-bar__right-box">
+					<ul class="right-box flex">
+						<li class="right-search">
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</li>
+						<li class="right-menu">
+							<i class="fa-solid fa-bars"></i>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+	</div>
+	<!-- 	메인스와이퍼 -->
+	<section class="section-1 relative">
+		<div class="inner mx-auto">
+			<div class="swiper swiper-con-1 w-full relative">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide main-swipers"><a href="#">
+							<img src="images/main-swiper1.png" alt="진료입원시스템">
+						</a></div>
+					<div class="swiper-slide main-swipers"><a href="#">
+							<img src="images/정확한진단 슬라이드.png" alt="정확한진단 슬라이드">
+						</a></div>
+					<div class="swiper-slide main-swipers"><a href="#"><img src="images/디스크전문슬라이드.png" alt="디스크전문 슬라이드"></a></div>
+					<div class="swiper-slide main-swipers"><a href="#"><img src="images/main-swiper4.png" alt="의료진 슬라이드">
+							<button class="doctor-btn">자세히 보기
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</button>
+						</a></div>
+
+				</div>
+				<div class="swiper-btn-group flex">
+					<div class="swiper-btn-prev swiper-btn"></div>
+					<div class="swiper-btn-next swiper-btn"></div>
+				</div>
+			</div>
+		</div>
+		<div class="swiper-pagination swiper-page"></div>
+	</section>
+
+	<!-- 진료과목 섹션	 -->
+	<div class="section-2-wrap">
+
+		<section class="section-2">
+
+			<h1 class="sec-2-main-tit">
+				맞춤형 진료로 여러분의<br>
+				건강을 책임지겠습니다.</h1>
+			<div class="sec-2-outside">
+				<div class="section-2-tit">
+					<p class="naeul-treatment">Naeul Hospital of Korean Medicine</p>
+					<h1 class="section-2-tit-txt">
+						<span> 나을</span><span>한방병원</span> 진료안내
+					</h1>
+
+				</div>
+				<div class="sec-2-clinic-wrap flex">
+
+				
+						<a href="pages/subjects.html" class="sec-2-treatment">
+						<img src="images/move cure.jpg" alt="진료과 바로가기 이미지">
+					</a>
+					
+				
+						<a href="pages/subjects.html" class="sec-2-clinic">
+						<img src="images/clinic move.jpg" alt="클리닉 바로가기 이미지">
+					</a>
+				</div>
+				<div class="sec-2-main-box flex">
+
+					<section class="section-2-swiper relative">
+						<div class="inner mx-auto">
+							<div class="swiper swiper-con-2 w-full relative">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide main-swipers">
+										<img src="images/사상체칠과.jpg" alt="사상체질과">
+										<div class="sec-2-text-box">
+											<h2 class="treat-tit">사상체질과</h2>
+											<p class="treat-sub">한국의 독창적인 의학인 사상의학을 바탕으로 <br>전체적인 관점에서 포괄적인 의료를 제공합니다.</p>
+										</div>
+										<!-- 									<button class="view-btn">자세히 보기</button> -->
+									</div>
+									<div class="swiper-slide main-swipers">
+										<img src="images/한방내과.jpg" alt="한방내과">
+										<div class="sec-2-text-box">
+											<h2 class="treat-tit">한방내과</h2>
+											<p class="treat-sub">전통 치료법과 현대 의학이 조화되어, 환자의 <br>특별한 상황에 맞춘 맞춤 치료를 제공합니다.</p>
+										</div>
+									</div>
+									<div class="swiper-slide main-swipers"><img src="images/한방부인소아과.jpg" alt="한방부인소아과">
+										<div class="sec-2-text-box">
+											<h2 class="treat-tit">한방부인청소년과</h2>
+											<p class="treat-sub">청소년과 여성의 시기별 질환에 대한 개인별 <br>진단과 맞춤 치료를 통하여 안전하고 효과적인 <br>치료를 제공합니다.</p>
+										</div>
+									</div>
+
+									<div class="swiper-slide main-swipers"><img src="images/침구의학과.jpg" alt="침구의학과">
+										<div class="sec-2-text-box">
+											<h2 class="treat-tit">침구의학과</h2>
+											<p class="treat-sub">침과 약침을 기본으로 손상된 근육과 인대를 <br>회복시키는 것을 주된 치료방법으로 <br>하고 있습니다.</p>
+										</div>
+									</div>
+									<div class="swiper-slide main-swipers"><img src="images/디스크진료.png" alt="디스크진료">
+										<div class="sec-2-text-box">
+											<h2 class="treat-tit">디스크진료</h2>
+											<p class="treat-sub">나을한방병원만의 특별한 대용량 약침과 <br> 초음파가이드 약침으로 디스크 통증을 줄이고 <br>치료 효과를 극대화하고 있습니다.</p>
+										</div>
+									</div>
+									<div class="swiper-slide main-swipers"><img src="images/추나진료.png" alt="한방재활의학과">
+										<div class="sec-2-text-box">
+											<h2 class="treat-tit">한방재활의학과</h2>
+											<p class="treat-sub">전통적인 한의학적 치료법과 더불어 운동요법, <br>한방물리요법, 자연요법, 추나요법 등을 <br>시행하고 있습니다.</p>
+										</div>
+									</div>
+									<div class="swiper-slide main-swipers"><img src="images/자동차보험.png" alt="자동차보험">
+										<div class="sec-2-text-box">
+											<h2 class="treat-tit">교통사고후유증</h2>
+											<p class="treat-sub">침, 약침, 뜸, 부항, 추나, 한약 치료등 다양한 <br>치료를 통해 통증을 잡고 교통사고 후에 <br>나타나는 후유증까지 예방하고 있습니다.
+
+											</p>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="swiper-btn-group-2 flex">
+							<div class="swiper-btn-prev swiper-btn-2 swiper-button"></div>
+							<div class="swiper-btn-next swiper-btn-3 swiper-button"></div>
+						</div>
+						<div class="swiper-pagination swiper-page-2"></div>
+
+					</section>
+
+					<div class="next-swiper-content-box">
+						<div class="first-content">
+							<ul class="fir-depth1 flex">
+
+								<li><img src="images/디스크협착.png" alt="디스크클리닉">
+									<h2 class="fir-depth1-tit">디스크, 협착 클리닉</h2>
+									<p class="fir-depth1-sub">척추 및 목 디스크의 균형을<br> 찾아주는 치료</p>
+								</li>
+
+								<li><img src="images/약침클리닉.png" alt="약침클리닉">
+									<h2 class="fir-depth1-tit">약침 클리닉</h2>
+									<p class="fir-depth1-sub">대용량 약침으로 근본염증 제거</p>
+								</li>
+								<li><img src="images/관절클리닉.png" alt="관절클리닉">
+									<h2 class="fir-depth1-tit">관절 클리닉</h2>
+									<p class="fir-depth1-sub">염증제거 및 퇴행지연</p>
+								</li>
+							</ul>
+						</div>
+						<div class="second-content">
+							<ul class="sec-depth1 flex">
+								<li><img src="images/체질개선.png" alt="체질개선">
+									<h2 class="fir-depth1-tit">체질개선</h2>
+									<p class="fir-depth1-sub">면역력과 건강을 위한 체질개선</p>
+								</li>
+								<li><img src="images/다이어트한약클리닉.png" alt="다이어트한약">
+									<h2 class="fir-depth1-tit">다이어트 한약</h2>
+									<p class="fir-depth1-sub">맞춤형 한약으로 다이어트 효과</p>
+								</li>
+								<li><img src="images/만성질환 클리닉.png" alt="만성질환클리닉">
+									<h2 class="fir-depth1-tit">만성질환</h2>
+									<p class="fir-depth1-sub">원래 기능을 회복하는 치료요법</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+	</div>
+
+	<!-- 의료진 소개 섹션 -->
+	<div class="section-3-wrap">
+		<section class="section-3">
+			<div class="sec-3-txt-box">
+				<h1 class="sec-3-tit">
+					각 분야의 의료진이 맞춤형 진료를 통해<br />
+					<strong>근본 원인</strong>을 치료합니다.
+				</h1>
+			</div>
+			<div class="sec-3-con mx-auto">
+				<div class="doc-introduction flex">
+					<h1 class="intro-txt"> 의료진소개</h1>
+					<a href="pages/doctors.html"><button class="doc-viewmore">자세히보기</button></a>
+				</div>
+				<div class="doctor__box">
+					<ul class="flex doc-dep1">
+						<li>
+							<div class="doc-img-box doc-1-img">
+								<img src="images/김OO한의사.png" alt="김OO 병원장" class="doc-img">
+							</div>
+							<div class="doc-text-box">
+								<p class="doc-txt num1">김OO 한의사
+
+								</p>
+								<p class="doc-txt-2">병원장</p>
+								<div class="doc-txt-3">
+									<button class="simple-view">진료분야</button>
+									<div class="view-content">
+										<h2>추나, 통증, 만성질환, 디스크 전문</h2>
+
+										<p>"통증의 핵심이 되는 원인 치료"를 필두로 <br>"개개인마다 증상에 맞춘
+											치료를 중점"으로 합니다.<br>
+											면밀한 진료로 데이터 기반의 <대용량 약침 요법> <br>
+												<초음파 가이드 약침 기법>
+													을 통해 <br>재발 없는 통증, 통증의 빠른 회복을 도모합니다.</p>
+										<button class="close-btn">
+											닫기
+										</button>
+
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="doc-img-box doc-2-img">
+								<img src="images/이OO한의사.png" alt="이OO 진료원장" class="doc-img">
+							</div>
+							<div class="doc-text-box ">
+								<p class="doc-txt num2">이OO 한의사</p>
+								<p class="doc-txt-2">진료원장</p>
+								<div class="doc-txt-3 doc2">
+									<button class="simple-view">진료분야</button>
+									<div class="view-content">
+										<h2>청소년, 여성, 소화기질환 전문</h2>
+
+										<p>"개개인을 가족처럼 생각하며 정확한 진단과 진료" <br>기반으로
+											편안한 치료를 진행합니다.
+											<br>10년 이상의 진료 경험과 청소년, 소화기, <br>여성 질환 전문으로
+											꼼꼼하게 분석하고 세심하게 <br>치료하여
+											환자분들에게 신뢰받는 진료를 <br>시행하고 있습니다.
+										</p>
+										<button class="close-btn">
+											닫기
+										</button>
+
+									</div>
+								</div>
+						</li>
+						<li>
+							<div class="doc-img-box doc-3-img">
+								<img src="images/정OO한의사.png" alt="정OO 진료원장" class="doc-img">
+							</div>
+							<div class="doc-text-box">
+								<p class="doc-txt num2">정OO 한의사</p>
+								<p class="doc-txt-2">진료원장</p>
+								<div class="doc-txt-3">
+									<button class="simple-view">진료분야</button>
+									<div class="view-content">
+										<h2>체질맞춤한약, 비뇨/생식기질환 전문</h2>
+
+										<p> 면역질환과 비뇨/생식기질환 전문으로 근본원인을<br>
+											찾아 치료하는 진료를 시행합니다.<br> "환자 개개인의 체질맞춤형 진료"를 필두로 <br>자세한 상담을 통해
+											각각의 체질에 맞는 한약과<br> 다이어트 한약을 직접 탕전하여 확실한 효과를
+											<br>볼 수 있도록 합니다.
+										</p>
+										<button class="close-btn">
+											닫기
+										</button>
+
+									</div>
+								</div>
+						</li>
+						<li>
+							<div class="doc-img-box doc-4-img">
+								<img src="images/송OO한의사.png" alt="송OO 진료원장" class="doc-img">
+							</div>
+							<div class="doc-text-box">
+								<p class="doc-txt num2">송OO 한의사</p>
+								<p class="doc-txt-2">진료원장</p>
+								<div class="doc-txt-3">
+									<button class="simple-view">진료분야</button>
+									<div class="view-content">
+										<h2>교통사고후유증, 한방재활치료 전문</h2>
+
+										<p>"환자에게 공감하며 질환에 다방면에 접근하여 <br>치료 + 환자의 몸이
+											스스로 낫도록 도움"을 드리는 <br>진료를 중점으로 합니다.
+											<br>세심한 진료를 통해 교통사고후유증을 예방하고 <br>한방재활치료를 통해
+											퇴원까지 완치되도록 <br>책임감 있는 진료를 시행합니다.
+										</p>
+										<button class="close-btn">
+											닫기
+										</button>
+
+									</div>
+								</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<!-- 나을클리닉 섹션  -->
+
+	<div class="section-4-wrap">
+		<section class="section-4">
+			<h2 class="sec-4-tit">
+				<p>나을</p>
+				<p>한방병원</p>
+				<p>클리닉</p>
+			</h2>
+			<div class="sec-4-container">
+				<!-- 왼쪽 세로 탭 메뉴 -->
+				<div class="tab-menu-container">
+					<ul class="tab-menu">
+						<li class="active" data-index="0">대용량약침</li>
+						<li data-index="1">태반약침</li>
+						<li data-index="2">만성질환</li>
+						<li data-index="3">안면마비</li>
+						<li data-index="4">초음파가이드 약침</li>
+						<li data-index="5">디스크</li>
+						<li data-index="6">다이어트한약</li>
+						<li data-index="7">체질맞춤한약</li>
+						<li data-index="8">교통사고</li>
+					</ul>
+				</div>
+
+				<!-- 오른쪽 콘텐츠 영역 -->
+				<div class="content-container">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="tab-content">
+									<h2>대용량 약침 클리닉</h2>
+									<p>일반적인 약침과 다르게 대용량 약침요법은 근육사이즈에 따라 대용량의 약물을 <br>주입하게 되면 강한 근육이완작용, 영양공급, 염증 감소 작용을 통해 환부의 증상을 <br>완화시킵니다.</p>
+									<div class="tag-list">
+										<span class="tag">#통증완화</span>
+										<span class="tag">#염증감소</span>
+										<span class="tag">#근육이완</span>
+										<span class="tag">#노폐물감소</span>
+										<span class="tag">#한방치료병행</span>
+
+									</div>
+									<a href="#" class="btn-more">자세히 보기</a>
+								</div>
+
+								<div class="tab-img-box">
+									<img src="images/대용량약침.jpg" alt="대용량약침 클리닉" class="tab-img tab-img-1" />
+								</div>
+							</div>
+
+							<!-- 태반약침 클리닉 -->
+							<div class="swiper-slide">
+								<div class="tab-content">
+									<h2>태반약침 클리닉</h2>
+									<p>사람의 태반을 원료로한 약침으로 간기능 개선, 갱년기 증상 완화,<br> 피부노화 개선, 면역력 개선, 만성통증 완화에 탁월합니다.</p>
+									<div class="tag-list">
+										<span class="tag">#만성통증</span>
+										<span class="tag">#갱년기증상</span>
+										<span class="tag">#면역개선</span>
+										<span class="tag">#피부개선</span>
+										<span class="tag">#면역강화</span>
+
+									</div>
+									<a href="#" class="btn-more">자세히 보기</a>
+								</div>
+								<div class="tab-img-box">
+									<img src="images/태반약침클리닉.jpg" alt="태반약침 클리닉" class="tab-img tab-img-1" />
+								</div>
+							</div>
+
+							<!-- 만성질환 클리닉 -->
+							<div class="swiper-slide">
+								<div class="tab-content">
+									<h2>만성질환 클리닉</h2>
+									<p>다양한 원인으로 오랜시간 앓아온 질환은 잘 치료가 되지않고, 재발 가능성이 <br>높다는 특징이 있습니다.
+										세밀한 진료를 통해 질환의 원인을 찾고 <br>개개인에게 맞는 치료법을 시행합니다.</p>
+									<div class="tag-list">
+										<span class="tag">#만성피로</span>
+										<span class="tag">#한약</span>
+										<span class="tag">#만성통증</span>
+										<span class="tag">#우울</span>
+										<span class="tag">#삶의질저하</span>
+
+									</div>
+									<a href="#" class="btn-more">자세히 보기</a>
+								</div>
+								<div class="tab-img-box">
+									<img src="images/만성질환클리닉사진.png" alt="만성질환 클리닉" class="tab-img tab-img-1" />
+								</div>
+							</div>
+
+							<!-- 안면마비 클리닉-->
+							<div class="swiper-slide">
+								<div class="tab-content">
+									<h2>안면마비 클리닉</h2>
+									<p>
+										안면마비의 치료를 위해 한방치료로 침,전침, 패치 피료,
+										약침, 매선,<br />
+										한약 등이 치료 방법으로 사용되고 있습니다.
+									</p>
+									<div class="tag-list">
+										<span class="tag">#구안와사</span>
+										<span class="tag">#미각장애</span>
+										<span class="tag">#이명현상</span>
+										<span class="tag">#봉약침</span>
+										<span class="tag">#안면도수치료</span>
+
+									</div>
+									<a href="#" class="btn-more">자세히 보기</a>
+								</div>
+								<div class="tab-img-box">
+									<img src="images/안면마비클리닉.jpg" alt="" class="tab-img tab-img-1" />
+								</div>
+							</div>
+
+							<!-- 초음파가이드 클리닉-->
+							<div class="swiper-slide">
+								<div class="tab-content">
+									<h2>초음파가이드 약침 클리닉</h2>
+									<p>
+										초음파 의료기기를 사용하여 실시간으로 보면서 원인이 되는 부위에 <br> 정확히 약침이 투여가 되고 많은 양의 약침을 놓을 수 있습니다.
+									</p>
+									<div class="tag-list">
+										<span class="tag">#디스크</span>
+										<span class="tag">#초음파가이드</span>
+										<span class="tag">#협착증</span>
+										<span class="tag">#맞춤치료</span>
+										<span class="tag">#원인치료</span>
+										<span class="tag">#안녕하세요</span>
+									</div>
+									<a href="#" class="btn-more">자세히 보기</a>
+								</div>
+								<div class="tab-img-box">
+									<img src="images/초음파.PNG" alt="초음파가이드 약침 클리닉" class="tab-img tab-img-1" />
+								</div>
+							</div>
+							<!-- 디스크 클리닉 -->
+							<div class="swiper-slide">
+								<div class="tab-content">
+									<h2>디스크 클리닉</h2>
+									<p>통증 위주, 감각 이상 위주, 근력 저하, 척추 구조 이상, 협착증, 신경 염증 회복의 지연,<br> 체중으로 인한 과부하 등 증상별로 맞춤형 디스크 치료가 시행됩니다.</p>
+									<div class="tag-list">
+										<span class="tag">#통증차단약침</span>
+										<span class="tag">#근육이완</span>
+										<span class="tag">#추나요법</span>
+										<span class="tag">#초음파약침</span>
+										<span class="tag">#한약</span>
+										<span class="tag">#신경회복약침</span>
+									</div>
+									<a href="#" class="btn-more">자세히 보기</a>
+								</div>
+								<div class="tab-img-box">
+									<img src="images/디스크클리닉.png" alt="디스크 클리닉" class="tab-img tab-img-1" />
+								</div>
+							</div>
+
+							<!-- 다이어트 클리닉-->
+							<div class="swiper-slide">
+								<div class="tab-content">
+									<h2>다이어트 클리닉</h2>
+									<p>나을한방병원만의 자체 처방 12단계의 폭넓은 단계의 한방 다이어트 한약으로 <br>부작용을 최소화하고 식이 조절없이 효과를 볼 수 있습니다.</p>
+									<div class="tag-list">
+										<span class="tag">#다이어트</span>
+										<span class="tag">#식이조절</span>
+										<span class="tag">#운동</span>
+										<span class="tag">#체질맞춤</span>
+										<span class="tag">#몸매나을탕</span>
+
+									</div>
+									<a href="#" class="btn-more">자세히 보기</a>
+								</div>
+								<div class="tab-img-box">
+									<img src="images/다이어트클리닉.png" alt="다이어트 클리닉" class="tab-img tab-img-1" />
+								</div>
+							</div>
+
+							<!-- 체질맞춤 클리닉-->
+							<div class="swiper-slide">
+								<div class="tab-content">
+									<h2>체질맞춤한약 클리닉</h2>
+									<p>각자의 체질과 성향을 고려한 다음 한약, 침, 뜸, 부항, 사혈, 온열요법 등<br> 한의학 이론을 바탕으로 한 다양한 치료법을 시행합니다.</p>
+									<div class="tag-list">
+										<span class="tag">#만성피로</span>
+										<span class="tag">#갑상선질환</span>
+										<span class="tag">#알레르기</span>
+										<span class="tag">#자가면역질환</span>
+										<span class="tag">#온열요법</span>
+
+									</div>
+									<a href="#" class="btn-more">자세히 보기</a>
+								</div>
+								<div class="tab-img-box">
+									<img src="images/체질맞춤한약클리닉.png" alt="체질맞춤한약 클리닉" class="tab-img tab-img-1" />
+								</div>
+							</div>
+
+							<!-- 교통사고 클리닉 -->
+							<div class="swiper-slide">
+								<div class="tab-content">
+									<h2>교통사고 클리닉</h2>
+									<p>
+										근골격계의 손상을 확인하기 위한 각종 이학적 검사가
+										시행됩니다.<br />
+										이 외에도 필요한 경우 영상검사를 시행하여 통증의 원인을
+										진단하게 됩니다. <br />개인별 맞춤 치료를 제공하기 위한
+										한의학적 진찰 방법도 다방면으로 이루어집니다.
+									</p>
+									<div class="tag-list">
+										<span class="tag">#경향통</span>
+										<span class="tag">#요통</span>
+										<span class="tag">#전침치료</span>
+										<span class="tag">#부항치료</span>
+										<span class="tag">#추나요법 치료</span>
+
+									</div>
+									<a href="#" class="btn-more">자세히 보기</a>
+								</div>
+								<div class="tab-img-box">
+									<img src="images/교통사고클리닉.png" alt="교통사고 클리닉" class="tab-img tab-img-1" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<!-- 시설/장비 둘러보기 -->
+
+	<div class="section-5-wrap">
+		<section class="section-5">
+			<div class="sec-5-tit">
+				<h2 class="sec-5-txt">
+					<p>나을</p>
+					<p>한방병원 </p> 둘러보기
+				</h2>
+			</div>
+			<div class="medical-box-wrap">
+				<div class="medical-container flex">
+					<div class="facilities">
+						<a href="pages/facility.html"><button class="view-more">병원시설 보기</button></a>
+						<img src="images/한방병원대기실.PNG" alt="대기실" class="fac-img" />
+					</div>
+					<div class="medical-line"></div>
+
+					<div class="equip-1">
+						<a href="pages/facility.html"><button class="view-more">의료장비 보기</button></a>
+						<img src="images/한방병원의료장비.png" alt="저주파자극기" class="equip-img" />
+					</div>
+
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<!-- footer	 -->
+	<footer class="footer-wrap">
+		<div class="footer-con mx-auto flex">
+			<div class="footer-map">
+				<div>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d203061.99320381702!2d126.69158413587887!3d37.32253120198668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b6f875ae27c11%3A0x60f9dbb76d8a07e7!2z64KY7J2E7ZWc7J2Y7JuQ!5e0!3m2!1sko!2skr!4v1740937935661!5m2!1sko!2skr" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+			<div class="footer-content-box">
+				<div class="fo-content-con mx-auto">
+					<div class="footer-tit">
+						<h1 class="fo-txt">CONTACT</h1>
+					</div>
+					<div class="footer-addr flex">
+						<h2 class="fo-addr flex">
+							<img src="images/주소.png" alt="주소이미지" />주소
+						</h2>
+						<p class="addr">경기도 안산시 단원구 고잔O길 OOO(중앙동)</p>
+					</div>
+					<div class="cure-time flex">
+						<h2 class="times flex">
+							<img src="images/진료시간.png" alt="진료시간 이미지" />진료시간
+						</h2>
+						<div class="times-content">
+							<p class="date flex">평일</p>
+
+							<p class="date-2">주말</p>
+							<p class="date-3">점심시간</p>
+
+						</div>
+						<div class="clock">
+							<p class="time-1">오전 09:00 ~ 오후 08:30</p>
+							<p class="time-2">오전 10:00 ~ 오후 03:00</p>
+							<p class="lunch">오후 01:00 ~ 오후 02:00</p>
+						</div>
+
+					</div>
+					<div class="notice">
+						<p class="no-1">※ 주말은 점심시간 없이 진료</p>
+						<p class="no-2">※ 공휴일은 단축진료</p>
+					</div>
+
+					<div class="call flex">
+						<h2 class="calling flex">
+							<img src="images/대표전화.png" alt="대표전화 이미지" />대표전화
+						</h2>
+						<p class="number">02-1234-5678</p>
+					</div>
+					<div class="kakaotalk flex">
+						<h2 class="talktalk flex">
+							<img src="images/카카오톡이미지.png" alt="카카오톡 이미지" />
+							SNS
+						</h2>
+						<div class="sns-img flex">
+							<img src="images/sns카카오톡.png" alt="카카오톡 로고" />
+							<img src="images/유튜브이미지.png" alt="유튜브" />
+							<img src="images/네이버블로그.png" alt="네이버블로그" />
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="read-box">
+			<div class="read flex">
+				<p>이용약관</p>
+				<p>개인정보처리방침</p>
+				<p>비급여안내</p>
+			</div>
+		</div>
+	</footer>
+	<footer class="footer-2">
+		<div class="footer__bottom-box">
+			<div class="use-box">
+				<p class="address text-[0.8rem]">
+					주소 : 경기도 안산시 단원구 고잔O길 OOO-OO, O층
+				</p>
+				<p class="enroll-num text-[0.9rem]">사업자 등록번호 : 1234-5678</p>
+				<p class="boss text-[0.9rem]">대표자 : 김OO</p>
+				<p class="fax text-[0.9rem]">팩스 : 02-000-0000</p>
+			</div>
+			<div class="copyright">
+				<p>
+					Copyright 2025 ㅣ Naeul HOSPITAL OF KOREAN MEDICINE l All Rights
+					Reserved
+				</p>
+			</div>
+		</div>
+	</footer>
+</div>
+<div id="mo-wrap hidden">
+	<div class="mobile-side-menu-box">
+		<div class="mobile-side-bar flex flex-col">
+			<div class="mobile-side-menu__top h-[4rem]">
+				<div class="mobile-side-bar__close-btn">
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+			<div class="mobile-side-menu__bottom">
+				<div class="mobile-side-menu">
+					<ul class="mo-dep1">
+						<li>
+							<a href="#" class="dep-1-txt">병원소개</a>
+							<ul class="mo-dep2">
+								<li><a href="#" class="dep-2-txt">병원 층별안내</a></li>
+								<li><a href="pages/facility.html" class="dep-2-txt">시설안내</a></li>
+								<li><a href="#" class="dep-2-txt">비급여항목</a></li>
+								<li><a href="#" class="dep-2-txt">오시는길</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep-1-txt">시설소개</a>
+							<ul class="mo-dep2">
+								<li><a href="pages/facility.html" class="dep-2-txt">시설 둘러보기</a></li>
+								<li><a href="#" class="dep-2-txt">의료기기/장비</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep-1-txt">진료안내</a>
+							<ul class="mo-dep2">
+								<li><a href="pages/subjects.html" class="dep-2-txt">진료과목</a></li>
+								<li><a href="pages/subjects.html" class="dep-2-txt">진료안내</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep-1-txt">의료진소개</a>
+							<ul class="mo-dep2">
+								<li><a href="pages/doctors.html" class="dep-2-txt">담당진료분야</a></li>
+								<li><a href="pages/doctors.html" class="dep-2-txt">의료진 약력</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep-1-txt">전문클리닉</a>
+							<ul class="mo-dep2">
+								<li><a href="#" class="dep-2-txt">약침</a></li>
+								<li><a href="#" class="dep-2-txt">태반약침</a></li>
+								<li><a href="#" class="dep-2-txt">통증치료</a></li>
+								<li><a href="#" class="dep-2-txt">추나요법</a></li>
+								<li><a href="#" class="dep-2-txt">디스크치료</a></li>
+								<li><a href="#" class="dep-2-txt">만성질환</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep-1-txt">한약안내</a>
+							<ul class="mo-dep2">
+								<li><a href="#" class="dep-2-txt">건강보험첩약</a></li>
+								<li><a href="#" class="dep-2-txt">자동차보험한약</a></li>
+								<li><a href="#" class="dep-2-txt">체질맞춤한약</a></li>
+								<li><a href="#" class="dep-2-txt">다이어트한약</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="mo-1-wrap hidden">
+		<header class="mo-top-bar">
+			<div class="mo-top-bar-con mx-auto h-[70px] flex">
+				<div class="mo-naeul-logo-box w-[200px] h-full flex items-center">
+					<a href="index.html" class="logo flex">
+						<img class="mo-logo-img" src="images/나을한방병원로고.PNG" alt="나을한방병원로고" />
+					</a>
+				</div>
+				<div class="mo-top__right-menu">
+					<div class="mo-right-menu">
+						<button class="text-4xl"><i class="fa-solid fa-bars"></i></button>
+					</div>
+				</div>
+			</div>
+		</header>
+	</div>
+
+	<div class="mo-swiper-wrap hidden">
+		<section class="mo-section-1 relative">
+			<div class="inner mx-auto">
+				<div class="swiper mo-swiper-con-1 w-full relative">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide mo-main-swipers">
+							<a href="#">
+								<img src="images/모바일 신분증 슬라이드.png" alt="모바일 신분증 슬라이드이미지" />
+							</a>
+						</div>
+						<div class="swiper-slide mo-main-swipers">
+							<a href="#">
+								<img src="images/모바일 추나요법슬라이드.png" alt="모바일 추나요법 슬라이드 이미지" />
+							</a>
+						</div>
+						<div class="swiper-slide mo-main-swipers">
+							<a href="#"><img src="images/모바일 체질슬라이드.png" alt="모바일체질슬라이드이미지" /></a>
+						</div>
+						<div class="swiper-slide mo-main-swipers">
+							<a href="#"><img src="images/모바일의료진슬라이드.png" alt="모바일의료진슬라이드이미지" />
+								<button class="mo-doctor-btn">
+									자세히 보기
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+								</button>
+							</a>
+						</div>
+					</div>
+					<div class="swiper-btn-group flex">
+						<div class="swiper-btn-prev swiper-btn"></div>
+						<div class="swiper-btn-next swiper-btn"></div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-pagination swiper-page"></div>
+		</section>
+	</div>
+	<!-- 모바일 진료과목 -->
+	<div class="mo-section-2-wrap hidden">
+		<section class="mo-section-2">
+			<h1 class="mo-sec-2-main-tit">
+				맞춤형 진료로 여러분의<br />
+				건강을 책임지겠습니다.
+			</h1>
+			<div class="mo-section-2-tit">
+				<h1 class="mo-section-2-tit-txt">
+					<span> 나을</span><span>한방병원</span> 진료과목
+				</h1>
+			</div>
+
+			<div class="mo-sec-2-clinic-wrap">
+				<a href="pages/subjects.html" class="mo-sec-2-treatment block">
+					<img src="images/move cure.jpg" alt="모바일 진료과 바로가기 이미지" />
+				</a>
+			</div>
+			<section class="mo-section-2-swiper relative">
+				<div class="inner mx-auto">
+					<div class="mo-swiper mo-swiper-con-2 w-full relative">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide mo-1-main-swipers">
+								<img src="images/사상체칠과.jpg" alt="사상체질과" />
+								<div class="mo-sec-2-text-box">
+									<h2 class="mo-treat-tit">사상체질과</h2>
+									<p class="mo-treat-sub">
+										한국의 독창적인 의학인 사상의학을 바탕으로 전체적인
+										관점에서 포괄적인 의료를 제공합니다.
+									</p>
+								</div>
+								<!-- 									<button class="view-btn">자세히 보기</button> -->
+							</div>
+							<div class="swiper-slide mo-1-main-swipers">
+								<img src="images/한방내과.jpg" alt="한방내과" />
+								<div class="mo-sec-2-text-box">
+									<h2 class="mo-treat-tit">한방내과</h2>
+									<p class="mo-treat-sub">
+										전통 치료법과 현대 의학이 조화되어, 환자의 특별한 상황에
+										맞춘 맞춤 치료를 제공합니다.
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide mo-1-main-swipers">
+								<img src="images/한방부인소아과.jpg" alt="한방부인소아과" />
+								<div class="mo-sec-2-text-box">
+									<h2 class="mo-treat-tit">한방부인청소년과</h2>
+									<p class="mo-treat-sub">
+										청소년과 여성의 시기별 질환에 대한 개인별 진단과 맞춤
+										치료를 통하여 안전하고 효과적인 치료를 제공합니다.
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide mo-1-main-swipers">
+								<img src="images/침구의학과.jpg" alt="침구의학과" />
+								<div class="mo-sec-2-text-box">
+									<h2 class="mo-treat-tit">침구의학과</h2>
+									<p class="mo-treat-sub">
+										침과 약침을 기본으로 손상된 근육과 인대를 회복시키는 것을
+										주된 치료방법으로 하고 있습니다.
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide mo-1-main-swipers">
+								<img src="images/디스크진료.png" alt="디스크진료" />
+								<div class="mo-sec-2-text-box">
+									<h2 class="mo-treat-tit">디스크진료</h2>
+									<p class="mo-treat-sub">
+										나을한방병원만의 특별한 대용량 약침과 초음파가이드
+										약침으로 디스크 통증을 줄이고 치료 효과를 극대화하고
+										있습니다.
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide mo-1-main-swipers">
+								<img src="images/추나진료.png" alt="한방재활의학과" />
+								<div class="mo-sec-2-text-box">
+									<h2 class="mo-treat-tit">한방재활의학과</h2>
+									<p class="mo-treat-sub">
+										전통적인 한의학적 치료법과 더불어 운동요법, 한방물리요법,
+										자연요법, 추나요법 등을 시행하고 있습니다.
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide mo-1-main-swipers">
+								<img src="images/자동차보험.png" alt="자동차보험" />
+								<div class="mo-sec-2-text-box">
+									<h2 class="mo-treat-tit">교통사고후유증</h2>
+									<p class="mo-treat-sub">
+										침, 약침, 뜸, 부항, 추나, 한약 치료등 다양한 치료를 통해
+										통증을 잡고 교통사고 후에 나타나는 후유증까지 예방하고
+										있습니다.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-pagination mo-swiper-page-2"></div>
+			</section>
+
+			<!-- 모바일 진료 클리닉  -->
+		</section>
+	</div>
+
+	<!-- 모바일 클리닉 -->
+	<div class="mo-section-3-wrap hidden">
+		<section class="mo-section-3">
+			<h2 class="mo-sec-3-tit">
+				<p>나을</p>
+				<p>한방병원</p>
+				<p>클리닉</p>
+			</h2>
+			<div class="mo-sec-3-container">
+				<!-- 왼쪽 세로 탭 메뉴 -->
+				<div class="mo-tab-menu-container">
+					<ul class="mo-tab-menu">
+						<li class="active" data-index="0">대용량약침</li>
+						<li data-index="1">태반약침</li>
+						<li data-index="2">만성질환</li>
+						<li data-index="3">안면마비</li>
+						<li data-index="4">초음파 약침</li>
+						<li data-index="5">디스크</li>
+						<li data-index="6">다이어트한약</li>
+						<li data-index="7">체질맞춤한약</li>
+						<li data-index="8">교통사고</li>
+					</ul>
+				</div>
+
+				<!-- 오른쪽 콘텐츠 영역 -->
+				<div class="mo-content-container">
+					<div class="mo-swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="mo-tab-content">
+									<h2>대용량 약침 클리닉</h2>
+									<p>
+										일반적인 약침과 다르게 대용량 약침요법은 근육사이즈에 따라
+										대용량의 약물을 주입하게 되면 강한 근육이완작용, 영양공급,
+										염증 감소 작용을 통해 환부의 증상을 완화시킵니다.
+									</p>
+									<div class="mo-tag-list">
+										<span class="tag">#통증완화</span>
+										<span class="tag">#염증감소</span>
+										<span class="tag">#근육이완</span>
+										<span class="tag">#노폐물감소</span>
+										<span class="tag">#한방치료병행</span>
+									</div>
+									<a href="#" class="mo-btn-more">자세히 보기</a>
+								</div>
+
+								<div class="mo-tab-img-box">
+									<img src="images/대용량약침.jpg" alt="대용량약침 클리닉" class="tab-img tab-img-1" />
+								</div>
+							</div>
+
+							<!-- 태반약침 클리닉 -->
+							<div class="swiper-slide">
+								<div class="mo-tab-content">
+									<h2>태반약침 클리닉</h2>
+									<p>
+										사람의 태반을 원료로한 약침으로 간기능 개선, 갱년기 증상
+										완화, 피부노화 개선, 면역력 개선, 만성통증 완화에
+										탁월합니다.
+									</p>
+									<div class="mo-tag-list">
+										<span class="tag">#만성통증</span>
+										<span class="tag">#갱년기증상</span>
+										<span class="tag">#면역개선</span>
+										<span class="tag">#피부개선</span>
+										<span class="tag">#면역강화</span>
+									</div>
+									<a href="#" class="mo-btn-more">자세히 보기</a>
+								</div>
+								<div class="mo-tab-img-box">
+									<img src="images/태반약침클리닉.jpg" alt="태반약침 클리닉" class="tab-img tab-img-1" />
+								</div>
+							</div>
+
+							<!-- 만성질환 클리닉 -->
+							<div class="swiper-slide">
+								<div class="mo-tab-content">
+									<h2>만성질환 클리닉</h2>
+									<p>
+										다양한 원인으로 오랜시간 앓아온 질환은 잘 치료가 되지않고,
+										재발 가능성이 높다는 특징이 있습니다. 세밀한 진료를 통해
+										질환의 원인을 찾고 개개인에게 맞는 치료법을 시행합니다.
+									</p>
+									<div class="mo-tag-list">
+										<span class="tag">#만성피로</span>
+										<span class="tag">#한약</span>
+										<span class="tag">#만성통증</span>
+										<span class="tag">#우울</span>
+										<span class="tag">#삶의질저하</span>
+									</div>
+									<a href="#" class="mo-btn-more">자세히 보기</a>
+								</div>
+								<div class="mo-tab-img-box">
+									<img src="images/만성질환클리닉사진.png" alt="만성질환 클리닉" class="tab-img tab-img-1" />
+								</div>
+							</div>
+
+							<!-- 안면마비 클리닉-->
+							<div class="swiper-slide">
+								<div class="mo-tab-content">
+									<h2>안면마비 클리닉</h2>
+									<p>
+										안면마비의 치료를 위해 한방치료로 침,전침, 패치 피료,
+										약침, 매선, 한약 등이 치료 방법으로 사용되고 있습니다.
+									</p>
+									<div class="mo-tag-list">
+										<span class="tag">#구안와사</span>
+										<span class="tag">#미각장애</span>
+										<span class="tag">#이명현상</span>
+										<span class="tag">#봉약침</span>
+										<span class="tag">#안면도수치료</span>
+									</div>
+									<a href="#" class="mo-btn-more">자세히 보기</a>
+								</div>
+								<div class="mo-tab-img-box">
+									<img src="images/안면마비클리닉.jpg" alt="" class="tab-img tab-img-1" />
+								</div>
+							</div>
+
+							<!-- 초음파가이드 클리닉-->
+							<div class="swiper-slide">
+								<div class="mo-tab-content">
+									<h2>초음파가이드 약침 클리닉</h2>
+									<p>
+										초음파 의료기기를 사용하여 실시간으로 보면서 원인이 되는
+										부위에 정확히 약침이 투여가 되고 많은 양의 약침을 놓을 수
+										있습니다.
+									</p>
+									<div class="mo-tag-list">
+										<span class="tag">#디스크</span>
+										<span class="tag">#초음파가이드</span>
+										<span class="tag">#협착증</span>
+										<span class="tag">#맞춤치료</span>
+										<span class="tag">#원인치료</span>
+										<span class="tag">#안녕하세요</span>
+									</div>
+									<a href="#" class="mo-btn-more">자세히 보기</a>
+								</div>
+								<div class="mo-tab-img-box">
+									<img src="images/초음파.PNG" alt="초음파가이드 약침 클리닉" class="tab-img tab-img-1" />
+								</div>
+							</div>
+							<!-- 디스크 클리닉 -->
+							<div class="swiper-slide">
+								<div class="mo-tab-content">
+									<h2>디스크 클리닉</h2>
+									<p>
+										통증 위주, 감각 이상 위주, 근력 저하, 척추 구조 이상,
+										협착증, 신경 염증 회복의 지연, 체중으로 인한 과부하 등
+										증상별로 맞춤형 디스크 치료가 시행됩니다.
+									</p>
+									<div class="mo-tag-list">
+										<span class="tag">#통증차단약침</span>
+										<span class="tag">#근육이완</span>
+										<span class="tag">#추나요법</span>
+										<span class="tag">#초음파약침</span>
+										<span class="tag">#한약</span>
+										<span class="tag">#신경회복약침</span>
+									</div>
+									<a href="#" class="mo-btn-more">자세히 보기</a>
+								</div>
+								<div class="mo-tab-img-box">
+									<img src="images/디스크클리닉.png" alt="디스크 클리닉" class="tab-img tab-img-1" />
+								</div>
+							</div>
+
+							<!-- 다이어트 클리닉-->
+							<div class="swiper-slide">
+								<div class="mo-tab-content">
+									<h2>다이어트 클리닉</h2>
+									<p>
+										나을한방병원만의 자체 처방 12단계의 폭넓은 단계의 한방
+										다이어트 한약으로 부작용을 최소화하고 식이 조절없이 효과를
+										볼 수 있습니다.
+									</p>
+									<div class="mo-tag-list">
+										<span class="tag">#다이어트</span>
+										<span class="tag">#식이조절</span>
+										<span class="tag">#운동</span>
+										<span class="tag">#체질맞춤</span>
+										<span class="tag">#몸매나을탕</span>
+									</div>
+									<a href="#" class="mo-btn-more">자세히 보기</a>
+								</div>
+								<div class="mo-tab-img-box">
+									<img src="images/다이어트클리닉.png" alt="다이어트 클리닉" class="tab-img tab-img-1" />
+								</div>
+							</div>
+
+							<!-- 체질맞춤 클리닉-->
+							<div class="swiper-slide">
+								<div class="mo-tab-content">
+									<h2>체질맞춤한약 클리닉</h2>
+									<p>
+										각자의 체질과 성향을 고려한 다음 한약, 침, 뜸, 부항, 사혈,
+										온열요법 등 한의학 이론을 바탕으로 한 다양한 치료법을
+										시행합니다.
+									</p>
+									<div class="mo-tag-list">
+										<span class="tag">#만성피로</span>
+										<span class="tag">#갑상선질환</span>
+										<span class="tag">#알레르기</span>
+										<span class="tag">#자가면역질환</span>
+										<span class="tag">#온열요법</span>
+									</div>
+									<a href="#" class="mo-btn-more mx-auto">자세히 보기</a>
+								</div>
+								<div class="mo-tab-img-box">
+									<img src="images/체질맞춤한약클리닉.png" alt="체질맞춤한약 클리닉" class="tab-img tab-img-1" />
+								</div>
+							</div>
+
+							<!-- 교통사고 클리닉 -->
+							<div class="swiper-slide">
+								<div class="mo-tab-content">
+									<h2>교통사고 클리닉</h2>
+									<p>
+										근골격계의 손상을 확인하기 위한 각종 이학적 검사가
+										시행됩니다. 이 외에도 필요한 경우 영상검사를 시행하여
+										통증의 원인을 진단하게 됩니다. 개인별 맞춤 치료를 제공하기
+										위한 한의학적 진찰 방법도 다방면으로 이루어집니다.
+									</p>
+									<div class="mo-tag-list">
+										<span class="tag">#경향통</span>
+										<span class="tag">#요통</span>
+										<span class="tag">#전침치료</span>
+										<span class="tag">#부항치료</span>
+										<span class="tag">#추나요법 치료</span>
+									</div>
+									<a href="#" class="mo-btn-more">자세히 보기</a>
+								</div>
+								<div class="mo-tab-img-box">
+									<img src="images/교통사고클리닉.png" alt="교통사고 클리닉" class="tab-img tab-img-1" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<!--모바일 시설 둘러보기 -->
+	<div class="mo-section-4-wrap hidden">
+		<section class="mo-section-4">
+			<div class="mo-sec-4-tit">
+				<h2 class="mo-sec-4-txt">
+					<p>나을</p>
+					<p>한방병원</p>
+					둘러보기
+				</h2>
+			</div>
+			<div class="mo-medical-box-wrap">
+				<div class="mo-medical-container flex">
+					<div class="mo-facilities">
+						<a href="../pages/facility.html"><button class="mo-view-more">병원시설 보기</button></a>
+						<img src="images/한방병원대기실.PNG" alt="대기실" class="mo-fac-img" />
+					</div>
+					<div class="mo-medical-line"></div>
+
+					<div class="mo-equip-1">
+						<a href="#"><button class="mo-view-more">의료장비 보기</button></a>
+						<img src="images/한방병원의료장비.png" alt="저주파자극기" class="mo-equip-img" />
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<!-- 모바일 푸터1 -->
+	<div class="mobile-footer-wrap hidden">
+		<footer class="mo-footer-wrap">
+			<div class="mo-footer-con mx-auto flex">
+				<div class="mo-footer-map">
+					<div>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d203061.99320381702!2d126.69158413587887!3d37.32253120198668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b6f875ae27c11%3A0x60f9dbb76d8a07e7!2z64KY7J2E7ZWc7J2Y7JuQ!5e0!3m2!1sko!2skr!4v1740937935661!5m2!1sko!2skr" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+				</div>
+				<div class="mo-footer-content-box">
+					<div class="mo-fo-content-con mx-auto">
+						<div class="mo-footer-tit">
+							<h1 class="mo-fo-txt">CONTACT</h1>
+						</div>
+						<div class="mo-footer-addr flex">
+							<h2 class="mo-fo-addr flex">
+								<img src="images/주소.png" alt="주소이미지" />주소
+							</h2>
+							<p class="mo-addr">경기도 안산시 단원구 고잔O길 OOO</p>
+						</div>
+						<div class="mo-cure-time flex">
+							<h2 class="mo-times flex">
+								<img src="images/진료시간.png" alt="진료시간 이미지" />진료시간
+							</h2>
+							<div class="mo-times-content">
+								<p class="mo-date flex">평일</p>
+
+								<p class="mo-date-2">주말</p>
+								<p class="mo-date-3">점심시간</p>
+							</div>
+							<div class="mo-clock">
+								<p class="mo-time-1">오전 09:00 ~ 오후 08:30</p>
+								<p class="mo-time-2">오전 10:00 ~ 오후 03:00</p>
+								<p class="mo-lunch">오후 01:00 ~ 오후 02:00</p>
+							</div>
+						</div>
+						<div class="mo-notice">
+							<p class="mo-no-1">※ 주말은 점심시간 없이 진료</p>
+							<p class="mo-no-2">※ 공휴일은 단축진료</p>
+						</div>
+
+						<div class="mo-call flex">
+							<h2 class="mo-calling flex">
+								<img src="images/대표전화.png" alt="대표전화 이미지" />대표전화
+							</h2>
+							<p class="mo-number">02-1234-5678</p>
+						</div>
+						<div class="mo-kakaotalk flex">
+							<h2 class="mo-talktalk flex">
+								<img src="images/카카오톡이미지.png" alt="카카오톡 이미지" />
+								SNS
+							</h2>
+							<div class="mo-sns-img flex">
+								<img src="images/sns카카오톡.png" alt="카카오톡 로고" />
+								<img src="images/유튜브이미지.png" alt="유튜브" />
+								<img src="images/네이버블로그.png" alt="네이버블로그" />
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mo-read-box">
+				<div class="mo-read flex">
+					<p>이용약관</p>
+					<p>개인정보처리방침</p>
+					<p>비급여안내</p>
+				</div>
+			</div>
+		</footer>
+		<footer class="mo-footer-2">
+			<div class="mo-footer__bottom-box">
+				<div class="mo-use-box">
+					<p class="mo-address text-[0.8rem]">
+						주소 : 경기도 안산시 단원구 고잔O길 OOO-OO, O층
+					</p>
+					<p class="mo-enroll-num text-[0.9rem]">
+						사업자 등록번호 : 1234-5678
+					</p>
+					<p class="mo-boss text-[0.9rem]">대표자 : 김OO</p>
+					<p class="mo-fax text-[0.9rem]">팩스 : 02-000-0000</p>
+				</div>
+				<div class="mo-copyright">
+					<p>
+						Copyright 2025 ㅣ Naeul HOSPITAL OF KOREAN MEDICINE l All Rights
+						Reserved
+					</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+</div>
+
+  </body>
+</html>

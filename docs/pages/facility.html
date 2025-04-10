@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>나을한방병원 시설</title>
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- 폰트어썸 불러오기 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- 스와이퍼 불러오기 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- 테일윈드 불러오기 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="../style/common.css" />
+    <link rel="stylesheet" href="../style/facility.css" />
+    <script defer src="../js/main.js"></script>
+  </head>
+  <body>
+    <!-- 모바일 시작 -->
+    <div class="mo-real-scroll-box hidden">
+      <div class="mo-scroll-menu-box">
+        <ul class="mo-scroll-dep1">
+          <li class="mo-quick-btn">
+            <span>
+              <img src="../images/sns카카오톡.png" alt="카카오톡 이미지" />
+            </span>
+          </li>
+          <li class="mo-youtube-btn">
+            <a
+              href="https://www.youtube.com/@Naeul-haniwon/videos"
+              target="_blank"
+              ><span>
+                <img
+                  src="../images/유튜브이미지.png"
+                  alt="유튜브 이미지"
+                /> </span
+            ></a>
+          </li>
+          <li class="mo-blog-btn">
+            <a href="https://blog.naver.com/naeul_hani" target="_blank"
+              ><span
+                ><img
+                  src="../images/네이버블로그.png"
+                  alt="나을한방병원블로그"
+                /> </span
+            ></a>
+          </li>
+          <li class="mo-side-top-quick-menu">
+            <span> MENU+ </span>
+          </li>
+
+          <li class="mo-scroll-top-btn">
+            <span class="mo-top-font"> TOP </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="mobile-side-menu-box hidden">
+      <div class="mobile-side-bar flex flex-col">
+        <div class="mobile-side-menu__top h-[4rem]">
+          <div class="mobile-side-bar__close-btn">
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="mobile-side-menu__bottom">
+          <div class="mobile-side-menu">
+            <ul class="mo-dep1">
+              <li>
+                <a href="#" class="dep-1-txt">병원소개</a>
+                <ul class="mo-dep2">
+                  <li><a href="#" class="dep-2-txt">병원 층별안내</a></li>
+                  <li>
+                    <a href="facility.html" class="dep-2-txt">시설안내</a>
+                  </li>
+                  <li><a href="#" class="dep-2-txt">비급여항목</a></li>
+                  <li><a href="#" class="dep-2-txt">오시는길</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="dep-1-txt">시설소개</a>
+                <ul class="mo-dep2">
+                  <li>
+                    <a href="facility.html" class="dep-2-txt">시설 둘러보기</a>
+                  </li>
+                  <li><a href="#" class="dep-2-txt">의료기기/장비</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="dep-1-txt">진료안내</a>
+                <ul class="mo-dep2">
+                  <li>
+                    <a href="subjects.html" class="dep-2-txt">진료과목</a>
+                  </li>
+                  <li>
+                    <a href="subjects.html" class="dep-2-txt">진료안내</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="dep-1-txt">의료진소개</a>
+                <ul class="mo-dep2">
+                  <li>
+                    <a href="doctors.html" class="dep-2-txt">담당진료분야</a>
+                  </li>
+                  <li>
+                    <a href="doctors.html" class="dep-2-txt">의료진 약력</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="dep-1-txt">전문클리닉</a>
+                <ul class="mo-dep2">
+                  <li><a href="#" class="dep-2-txt">약침</a></li>
+                  <li><a href="#" class="dep-2-txt">태반약침</a></li>
+                  <li><a href="#" class="dep-2-txt">통증치료</a></li>
+                  <li><a href="#" class="dep-2-txt">추나요법</a></li>
+                  <li><a href="#" class="dep-2-txt">디스크치료</a></li>
+                  <li><a href="#" class="dep-2-txt">만성질환</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="dep-1-txt">한약안내</a>
+                <ul class="mo-dep2">
+                  <li><a href="#" class="dep-2-txt">건강보험첩약</a></li>
+                  <li><a href="#" class="dep-2-txt">자동차보험한약</a></li>
+                  <li><a href="#" class="dep-2-txt">체질맞춤한약</a></li>
+                  <li><a href="#" class="dep-2-txt">다이어트한약</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mo-sub-facility-wrap hidden">
+      <div class="mo-1-wrap">
+        <header class="mo-top-bar">
+          <div class="mo-top-bar-con mx-auto h-[70px] flex">
+            <div class="mo-naeul-logo-box w-[200px] h-full flex items-center">
+              <a href="../index.html" class="logo flex">
+                <img
+                  class="mo-logo-img"
+                  src="../images/찐로고.PNG"
+                  alt="나을한방병원로고"
+                />
+              </a>
+            </div>
+            <div class="mo-top__right-menu">
+              <div class="mo-right-menu">
+                <button class="text-4xl">
+                  <i class="fa-solid fa-bars"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+      <section class="mo-sub-facility-section">
+        <div class="mo-facility-background">
+          <div class="mo-facility-con mx-auto">
+            <h1 class="mo-facility-tit">시설 소개</h1>
+            <hr />
+            <p>
+              낫는 몸, 나을 몸이 만들어지는 공간,<br />나을한방병원을 사진으로
+              만나 보실 수 있습니다.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="mo-facility-tab-section">
+        <div class="mo-facility-tab-con mx-auto">
+          <div class="mo-facility-tab-menu-box">
+            <div class="mo-facility-tab-menu__head">
+              <ul class="mo-fa-tab-dep">
+                <li class="active">5층</li>
+                <li>4층</li>
+                <li>3층</li>
+                <li>2층</li>
+                <li>1층</li>
+                <li>B1층</li>
+                <li>B2층</li>
+                <li>건물외관</li>
+              </ul>
+            </div>
+            <div class="mo-facility-tab-menu__body">
+              <ul class="flex">
+                <li class="active">
+                  <div class="mo-fa-body-img-box">
+                    <img src="../images/5병동.png" alt="5층병동" />
+                  </div>
+                </li>
+                <li>
+                  <div class="mo-fa-body-img-box">
+                    <img src="../images/4병동.png" alt="4층병동" />
+                  </div>
+                </li>
+                <li>
+                  <div class="mo-fa-body-img-box">
+                    <img src="../images/3병동.png" alt="3층병동" />
+                  </div>
+                </li>
+                <li>
+                  <div class="mo-fa-body-img-box">
+                    <img src="../images/2층외래.png" alt="2층외래" />
+                  </div>
+                </li>
+                <li>
+                  <div class="mo-fa-body-img-box">
+                    <img src="../images/1층로비.png" alt="메인로비" />
+                  </div>
+                </li>
+                <li>
+                  <div class="mo-fa-body-img-box">
+                    <img src="../images/지하1층.png" alt="지하 1층 주차장" />
+                  </div>
+                </li>
+                <li>
+                  <div class="mo-fa-body-img-box">
+                    <img src="../images/지하2층.png" alt="지하2층 주차장" />
+                  </div>
+                </li>
+                <li>
+                  <div class="mo-fa-body-img-box">
+                    <img src="../images/건물외관.png" alt="건물외관" />
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 모바일 푸터1 -->
+      <div class="mobile-footer-wrap hidden">
+        <footer class="mo-footer-wrap">
+          <div class="mo-footer-con mx-auto flex">
+            <div class="mo-footer-map">
+              <div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d203061.99320381702!2d126.69158413587887!3d37.32253120198668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b6f875ae27c11%3A0x60f9dbb76d8a07e7!2z64KY7J2E7ZWc7J2Y7JuQ!5e0!3m2!1sko!2skr!4v1740937935661!5m2!1sko!2skr"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+            <div class="mo-footer-content-box">
+              <div class="mo-fo-content-con mx-auto">
+                <div class="mo-footer-tit">
+                  <h1 class="mo-fo-txt">CONTACT</h1>
+                </div>
+                <div class="mo-footer-addr flex">
+                  <h2 class="mo-fo-addr flex">
+                    <img src="../images/주소.png" alt="주소이미지" />주소
+                  </h2>
+                  <p class="mo-addr">경기도 안산시 단원구 고잔O길 OOO</p>
+                </div>
+                <div class="mo-cure-time flex">
+                  <h2 class="mo-times flex">
+                    <img
+                      src="../images/진료시간.png"
+                      alt="진료시간 이미지"
+                    />진료시간
+                  </h2>
+                  <div class="mo-times-content">
+                    <p class="mo-date flex">평일</p>
+
+                    <p class="mo-date-2">주말</p>
+                    <p class="mo-date-3">점심시간</p>
+                  </div>
+                  <div class="mo-clock">
+                    <p class="mo-time-1">오전 09:00 ~ 오후 08:30</p>
+                    <p class="mo-time-2">오전 10:00 ~ 오후 03:00</p>
+                    <p class="mo-lunch">오후 01:00 ~ 오후 02:00</p>
+                  </div>
+                </div>
+                <div class="mo-notice">
+                  <p class="mo-no-1">※ 주말은 점심시간 없이 진료</p>
+                  <p class="mo-no-2">※ 공휴일은 단축진료</p>
+                </div>
+
+                <div class="mo-call flex">
+                  <h2 class="mo-calling flex">
+                    <img
+                      src="../images/대표전화.png"
+                      alt="대표전화 이미지"
+                    />대표전화
+                  </h2>
+                  <p class="mo-number">02-1234-5678</p>
+                </div>
+                <div class="mo-kakaotalk flex">
+                  <h2 class="mo-talktalk flex">
+                    <img
+                      src="../images/카카오톡이미지.png"
+                      alt="카카오톡 이미지"
+                    />
+                    SNS
+                  </h2>
+                  <div class="mo-sns-img flex">
+                    <img src="../images/sns카카오톡.png" alt="카카오톡 로고" />
+                    <img src="../images/유튜브이미지.png" alt="유튜브" />
+                    <img src="../images/네이버블로그.png" alt="네이버블로그" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mo-read-box">
+            <div class="mo-read flex">
+              <p>이용약관</p>
+              <p>개인정보처리방침</p>
+              <p>비급여안내</p>
+            </div>
+          </div>
+        </footer>
+        <footer class="mo-footer-2">
+          <div class="mo-footer__bottom-box">
+            <div class="mo-use-box">
+              <p class="mo-address text-[0.8rem]">
+                주소 : 경기도 안산시 단원구 고잔O길 OOO-OO, O층
+              </p>
+              <p class="mo-enroll-num text-[0.9rem]">
+                사업자 등록번호 : 1234-5678
+              </p>
+              <p class="mo-boss text-[0.9rem]">대표자 : 김OO</p>
+              <p class="mo-fax text-[0.9rem]">팩스 : 02-000-0000</p>
+            </div>
+            <div class="mo-copyright">
+              <p>
+                Copyright 2025 ㅣ Naeul HOSPITAL OF KOREAN MEDICINE l All Rights
+                Reserved
+              </p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- 모바일 끝-->
+    <!-- 퀵메뉴 및 스크롤 top -->
+    <div class="scroll-menu-box">
+      <ul class="scroll-dep1">
+        <li class="quick-btn">
+          <span>
+            <img src="../images/빠른상담.png" alt="상담예약" />
+            상담예약
+          </span>
+        </li>
+        <li class="d">
+          <span>
+            <img src="../images/sns카카오톡.png" alt="카카오톡 상담" />
+            카톡상담
+          </span>
+        </li>
+        <li class="youtube-btn">
+          <a
+            href="https://www.youtube.com/@Naeul-haniwon/videos"
+            target="_blank"
+            ><span>
+              <img src="../images/유튜브이미지.png" alt="유튜브로 이동" />
+              유튜브
+            </span></a
+          >
+        </li>
+        <li class="blog-btn">
+          <a href="https://blog.naver.com/naeul_hani" target="_blank"
+            ><span
+              ><img src="../images/네이버블로그.png" alt="나을한방병원블로그" />
+              블로그
+            </span></a
+          >
+        </li>
+        <li class="scroll-top-btn">
+          <span class="top-font"> TOP </span>
+        </li>
+      </ul>
+    </div>
+    <!-- 사이트맵 메뉴 -->
+    <div class="site-map-wrap">
+      <div class="site-maps">
+        <div class="map__close-btn">
+          <div class="close close-1"></div>
+          <div class="close close-2"></div>
+        </div>
+        <div class="site-map-tit">
+          <h1 class="site-txt">사이트맵</h1>
+        </div>
+        <div class="map-top-menu-box">
+          <nav class="map__menu-1">
+            <ul class="flex list-1">
+              <li>
+                <a href="#"
+                  >병원소개
+                  <div class="screen">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </a>
+                <ul class="list-2">
+                  <li><a href="#">병원 층별안내</a></li>
+                  <li><a href="facility.html">시설안내</a></li>
+                  <li><a href="#">비급여항목</a></li>
+                  <li><a href="#">오시는길</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="facility.html"
+                  >시설소개
+                  <div class="screen">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </a>
+
+                <ul class="list-2">
+                  <li><a href="facility.html">시설둘러보기</a></li>
+                  <li><a href="facility.html">의료기기/장비</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="subjects.html"
+                  >진료안내
+                  <div class="screen">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </a>
+                <ul class="list-2">
+                  <li><a href="subjects.html">진료과목</a></li>
+                  <li><a href="subjects.html">진료시간</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="middle-line"></div>
+        <div class="map-bottom-menu-box">
+          <nav class="map__menu-2">
+            <ul class="flex list-4">
+              <li>
+                <a href="doctors.html"
+                  >의료진소개
+                  <div class="screen">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </a>
+                <ul class="list-5">
+                  <li><a href="doctors.html">담당진료분야</a></li>
+                  <li><a href="doctors.html">약력</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"
+                  >전문클리닉
+                  <div class="screen">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </a>
+                <ul class="list-5">
+                  <li><a href="#">약침</a></li>
+                  <li><a href="#">태반약침</a></li>
+                  <li><a href="#">통증치료</a></li>
+                  <li><a href="#">추나요법</a></li>
+                  <li><a href="#">디스크치료</a></li>
+                  <li><a href="#">만성질환</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"
+                  >한약안내
+                  <div class="screen">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </a>
+                <ul class="list-5">
+                  <li><a href="#">건강보험첩약</a></li>
+                  <li><a href="#">자동차보험첩약</a></li>
+                  <li><a href="#">체질맞춤한약</a></li>
+                  <li><a href="#">다이어트한약</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div id="sub-facility-wrap">
+      <div class="pc__top-bar-warp">
+        <header class="top-bar">
+          <div class="top-bar-con mx-auto h-[120px] flex">
+            <div class="naeul-logo-box w-[230px] h-full flex items-center">
+              <a href="../index.html" class="logo flex">
+                <img
+                  class="logo-img"
+                  src="../images/찐로고.PNG"
+                  alt="나을한방병원로고"
+                />
+              </a>
+            </div>
+
+            <nav class="top-bar__menu">
+              <ul class="depth1 flex">
+                <div class="con mx-auto"></div>
+                <li>
+                  <a href="facility.html">병원소개</a>
+
+                  <ul class="depth2">
+                    <li><a href="#">병원 층별안내</a></li>
+                    <li><a href="facility.html">시설안내</a></li>
+                    <li><a href="#">비급여항목</a></li>
+                    <li><a href="#">오시는 길</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="facility.html">시설소개</a>
+
+                  <ul class="depth2">
+                    <li><a href="facility.html">시설둘러보기</a></li>
+                    <li><a href="#">의료기기/장비</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="doctors.html">의료진소개</a>
+
+                  <ul class="depth2">
+                    <li><a href="doctors.html">전문진료과</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="subjects.html">진료안내</a>
+                  <ul class="depth2">
+                    <li><a href="subjects.html">진료과목</a></li>
+                    <li><a href="subjects.html">진료시간</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">전문클리닉</a>
+
+                  <ul class="depth2">
+                    <li><a href="#">대용량약침</a></li>
+                    <li><a href="#">태반약침</a></li>
+                    <li><a href="#">통증치료</a></li>
+                    <li><a href="#">추나요법</a></li>
+                    <li><a href="#">디스크치료</a></li>
+                    <li><a href="#">만성질환</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">한약정보</a>
+
+                  <ul class="depth2">
+                    <li><a href="#">건강보험첩약</a></li>
+                    <li><a href="#">자동차보험첩약</a></li>
+                    <li><a href="#">체질맞춤한약</a></li>
+                    <li><a href="#">다이어트한약</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">커뮤니티</a>
+
+                  <ul class="depth2">
+                    <li><a href="#">치료후기</a></li>
+                    <li><a href="#">온라인상담</a></li>
+                    <li><a href="#">병원소식</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+            <div class="top-bar__right-box">
+              <ul class="right-box flex">
+                <li class="right-search">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </li>
+                <li class="right-menu">
+                  <i class="fa-solid fa-bars"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </header>
+      </div>
+
+      <!-- 	서브 시설둘러보기 페이지 -->
+      <div class="sub-facility-box">
+        <div class="facility-background">
+          <div class="sub-facility-con mx-auto">
+            <h1 class="facility-intro">시설 소개</h1>
+            <hr />
+            <p>
+              낫는 몸, 나을 몸이 만들어지는 공간, <br />나을한방병원을 사진으로
+              만나 보실 수 있습니다.
+            </p>
+          </div>
+        </div>
+        <section class="fa-whole-box flex">
+          <div class="fa-tab-menu__head-box">
+            <div class="fa-tab-menu__head">
+              <ul class="flex flex-col">
+                <li class="active">5층 둘러보기</li>
+                <li>4층 둘러보기</li>
+                <li>3층 둘러보기</li>
+                <li>2층 둘러보기</li>
+                <li>1층 둘러보기</li>
+                <li>지하 1층 둘러보기</li>
+                <li>지하 2층 둘러보기</li>
+                <li>건물외관 둘러보기</li>
+              </ul>
+            </div>
+          </div>
+          <div class="fa-tab-menu__body">
+            <li class="active">
+              <img src="../images/5병동.png" alt="5층병동" />
+            </li>
+            <li><img src="../images/4병동.png" alt="4층병동" /></li>
+            <li><img src="../images/3병동.png" alt="3층병동" /></li>
+            <li><img src="../images/2층외래.png" alt="2층외래" /></li>
+            <li><img src="../images/1층로비.png" alt="메인로비" /></li>
+            <li>
+              <img src="../images/지하1층.png" alt="지하1층주차장" />
+            </li>
+            <li>
+              <img src="../images/지하2층.png" alt="지하2층 주차장" />
+            </li>
+            <li>
+              <img src="../images/건물외관.png" alt="건물외관 이미지" />
+            </li>
+          </div>
+        </section>
+      </div>
+      <!-- footer	 -->
+      <footer class="footer-wrap">
+        <div class="footer-con mx-auto flex">
+          <div class="footer-map">
+            <div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d203061.99320381702!2d126.69158413587887!3d37.32253120198668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b6f875ae27c11%3A0x60f9dbb76d8a07e7!2z64KY7J2E7ZWc7J2Y7JuQ!5e0!3m2!1sko!2skr!4v1740937935661!5m2!1sko!2skr"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <div class="footer-content-box">
+            <div class="fo-content-con mx-auto">
+              <div class="footer-tit">
+                <h1 class="fo-txt">CONTACT</h1>
+              </div>
+              <div class="footer-addr flex">
+                <h2 class="fo-addr flex">
+                  <img src="../images/주소.png" alt="주소이미지" />주소
+                </h2>
+                <p class="addr">경기도 안산시 단원구 고잔O길 OOO(중앙동)</p>
+              </div>
+              <div class="cure-time flex">
+                <h2 class="times flex">
+                  <img
+                    src="../images/진료시간.png"
+                    alt="진료시간 이미지"
+                  />진료시간
+                </h2>
+                <div class="times-content">
+                  <p class="date flex">평일</p>
+
+                  <p class="date-2">주말</p>
+                  <p class="date-3">점심시간</p>
+                </div>
+                <div class="clock">
+                  <p class="time-1">오전 09:00 ~ 오후 08:30</p>
+                  <p class="time-2">오전 10:00 ~ 오후 03:00</p>
+                  <p class="lunch">오후 01:00 ~ 오후 02:00</p>
+                </div>
+              </div>
+              <div class="notice">
+                <p class="no-1">※ 주말은 점심시간 없이 진료</p>
+                <p class="no-2">※ 공휴일은 단축진료</p>
+              </div>
+
+              <div class="call flex">
+                <h2 class="calling flex">
+                  <img
+                    src="../images/대표전화.png"
+                    alt="대표전화 이미지"
+                  />대표전화
+                </h2>
+                <p class="number">02-1234-5678</p>
+              </div>
+              <div class="kakaotalk flex">
+                <h2 class="talktalk flex">
+                  <img
+                    src="../images/카카오톡이미지.png"
+                    alt="카카오톡 이미지"
+                  />
+                  SNS
+                </h2>
+                <div class="sns-img flex">
+                  <img src="../images/sns카카오톡.png" alt="카카오톡 로고" />
+                  <img src="../images/유튜브이미지.png" alt="유튜브" />
+                  <img src="../images/네이버블로그.png" alt="네이버블로그" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="read-box">
+          <div class="read flex">
+            <p>이용약관</p>
+            <p>개인정보처리방침</p>
+            <p>비급여안내</p>
+          </div>
+        </div>
+      </footer>
+      <footer class="footer-2">
+        <div class="footer__bottom-box">
+          <div class="use-box">
+            <p class="address text-[0.8rem]">
+              주소 : 경기도 안산시 단원구 고잔O길 OOO-OO, O층
+            </p>
+            <p class="enroll-num text-[0.9rem]">사업자 등록번호 : 1234-5678</p>
+            <p class="boss text-[0.9rem]">대표자 : 김OO</p>
+            <p class="fax text-[0.9rem]">팩스 : 02-000-0000</p>
+          </div>
+          <div class="copyright">
+            <p>
+              Copyright 2025 ㅣ Naeul HOSPITAL OF KOREAN MEDICINE l All Rights
+              Reserved
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

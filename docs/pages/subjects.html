@@ -1,0 +1,2948 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>나을한방병원 진료과목</title>
+
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- 폰트어썸 불러오기 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- 스와이퍼 불러오기 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- 테일윈드 불러오기 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../style/common.css">
+    <link rel="stylesheet" href="../style/subjects.css" />
+    <script defer src="../js/main.js"></script>
+  </head>
+  <body>
+    <div class="mo-real-scroll-box hidden">
+      <div class="mo-scroll-menu-box">
+        <ul class="mo-scroll-dep1">
+          <li class="mo-quick-btn">
+            <span>
+              <img src="../images/빠른상담.png" alt="빠른상담">
+    
+            </span>
+          </li>
+          <li class="mo-youtube-btn">
+            <a href="https://www.youtube.com/@Naeul-haniwon/videos" target="_blank"><span>
+                <img src="../images/유튜브이미지.png" alt="유튜브">
+    
+              </span></a>
+          </li>
+          <li class="mo-blog-btn">
+            <a href="https://blog.naver.com/naeul_hani" target="_blank"><span><img src="../images/네이버블로그.png" alt="나을한방병원블로그">
+    
+              </span></a>
+    
+          </li>
+          <li class="mo-side-top-quick-menu">
+            <span>
+    
+              MENU+
+            </span>
+          </li>
+    
+          <li class="mo-scroll-top-btn">
+            <span class="mo-top-font">
+              TOP
+            </span>
+    
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="mo-wrap hidden">
+      <div class="mobile-side-menu-box">
+        <div class="mobile-side-bar flex flex-col">
+          <div class="mobile-side-menu__top h-[4rem]">
+            <div class="mobile-side-bar__close-btn">
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <div class="mobile-side-menu__bottom">
+            <div class="mobile-side-menu">
+              <ul class="mo-dep1">
+                <li>
+                  <a href="#" class="dep-1-txt">병원소개</a>
+                  <ul class="mo-dep2">
+                    <li><a href="#" class="dep-2-txt">병원 층별안내</a></li>
+                    <li><a href="#" class="dep-2-txt">시설안내</a></li>
+                    <li><a href="#" class="dep-2-txt">비급여항목</a></li>
+                    <li><a href="#" class="dep-2-txt">오시는길</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep-1-txt">시설소개</a>
+                  <ul class="mo-dep2">
+                    <li><a href="facility.html" class="dep-2-txt">시설 둘러보기</a></li>
+                    <li><a href="facility.html" class="dep-2-txt">의료기기/장비</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep-1-txt">진료안내</a>
+                  <ul class="mo-dep2">
+                    <li><a href="subjects.html" class="dep-2-txt">진료과목</a></li>
+                    <li><a href="subjects.html" class="dep-2-txt">진료안내</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#l" class="dep-1-txt">의료진소개</a>
+                  <ul class="mo-dep2">
+                    <li><a href="doctors.html" class="dep-2-txt">담당진료분야</a></li>
+                    <li><a href="doctors.html" class="dep-2-txt">의료진 약력</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep-1-txt">전문클리닉</a>
+                  <ul class="mo-dep2">
+                    <li><a href="#" class="dep-2-txt">약침</a></li>
+                    <li><a href="#" class="dep-2-txt">태반약침</a></li>
+                    <li><a href="#" class="dep-2-txt">통증치료</a></li>
+                    <li><a href="#" class="dep-2-txt">추나요법</a></li>
+                    <li><a href="#" class="dep-2-txt">디스크치료</a></li>
+                    <li><a href="#" class="dep-2-txt">만성질환</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep-1-txt">한약안내</a>
+                  <ul class="mo-dep2">
+                    <li><a href="#" class="dep-2-txt">건강보험첩약</a></li>
+                    <li><a href="#" class="dep-2-txt">자동차보험한약</a></li>
+                    <li><a href="#" class="dep-2-txt">체질맞춤한약</a></li>
+                    <li><a href="#" class="dep-2-txt">다이어트한약</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mo-1-wrap hidden">
+    
+        <header class="mo-top-bar">
+          <div class="mo-top-bar-con mx-auto h-[70px] flex">
+            <div class="mo-naeul-logo-box w-[200px] h-full flex items-center">
+              <a href="../index.html" class="logo flex">
+                <img class="mo-logo-img" src="../images/찐로고.PNG" alt="나을한방병원로고" />
+              </a>
+            </div>
+            <div class="mo-top__right-menu">
+              <div class="mo-right-menu">
+                <button class="text-4xl"><i class="fa-solid fa-bars"></i></button>
+              </div>
+            </div>
+          </div>
+        </header>
+    
+        <!-- 	모바일 서브진료과목페이지	 -->
+        <div class="mo-sub-cure-box hidden">
+          <div class="mo-checkup-box">
+            <div class="mo-checkup-con mx-auto">
+              <h2 class="mo-checkup-tit">진료과목</h2>
+              <p class="mo-checkup-sub">나을한방병원의<br>척추·관절·통증 비수술 치료에 대해 알려드립니다.</p>
+            </div>
+          </div>
+          <section class="mo-tab-section">
+            <div class="mo-sub-tab-container mx-auto">
+              <div class="mo-tab-menu-box">
+                <div class="mo-tab-menu__head">
+                  <ul class="mo-sub-tab-dep1">
+                    <li class="active">
+                      <p>척추통증</p>
+                    </li>
+                    <li>
+                      <p>디스크통증</p>
+                    </li>
+                    <li>
+                      <p>체질맞춤한약</p>
+                    </li>
+                    <li>
+                      <p>안면마비</p>
+                    </li>
+                    <li>
+                      <p>초음파약침</p>
+                    </li>
+    
+                  </ul>
+                </div>
+                <div class="mo-tab-menu__body">
+                  <ul>
+                    <li class="active">
+                      <div class="mo-tab-content mo-tab-content-1">
+                        <div class="mo-tab-body-con mx-auto">
+                          <div class="mo-six-points">
+                            <h2 class="six-points-txt">
+                              나을한방병원 6대 핵심 치료 원칙
+                            </h2>
+                          </div>
+                          <div class="mo-sub-swiper-wrap">
+                            <section class="mo-sub-section relative">
+                              <div class="inner mx-auto">
+                                <div class="swiper mo-sub-swiper-con w-full relative">
+                                  <div class="swiper-wrapper">
+                                    <div class="swiper-slide mo-sub-swipers">
+                                      <div class="per-box box1 flex">
+                                        <div class="circle">
+                                          <span class="cir-txt">통증 발생<br />과정 치료
+                                          </span>
+                                        </div>
+                                        <div class="circle-txt">
+                                          <span class="c-txt flex flex-col">
+                                            <h3 class="text-[1.3rem]">
+                                              허리-다리 통증 및 저림
+                                            </h3>
+                                            <p>
+                                              근막 -> 근육 -> 신경 순으로 치료
+                                              통증이 시작된 원인이 제거되지
+                                              않으면
+                                              통증이 개선되어도 추후 재발 가능성 있음.
+                                            </p>
+                                          </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="swiper-slide mo-sub-swipers">
+                                      <div class="per-box flex box2">
+                                        <div class="circle">
+                                          <span class="cir-txt">
+                                            단계적 <br />약침 치료</span>
+                                        </div>
+                                        <div class="circle-txt">
+                                          <span class="c-txt flex flex-col">
+                                            <h3 class="text-[1.3rem]">
+                                              질병군마다 알맞은 약침 약물 선정
+                                            </h3>
+                                            <p>
+                                              목적에 따른 약침 시술의 다양성
+                                              (근막 이완, 항염증, 재생,신경 압박 해소)
+                                            </p>
+                                          </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="swiper-slide mo-sub-swipers">
+                                      <div class="per-box flex box3">
+                                        <div class="circle">
+                                          <span class="cir-txt">만성질환<br />한약 재생<br />치료</span>
+                                        </div>
+                                        <div class="circle-txt">
+                                          <span class="c-txt flex flex-col">
+                                            <h3 class="text-[1.3rem]">
+                                              환자분의 재생능력
+                                            </h3>
+                                            <p>
+                                              자생력 저하시 지속되는 만성질환엔 자생력을
+                                              높이는 한약 치료를 함.
+                                            </p>
+                                          </span>
+                                        </div>
+                                      </div>
+                                    </div>
+    
+                                    <div class="swiper-slide mo-sub-swipers">
+                                      <div class="per-box box1 flex">
+                                        <div class="circle">
+                                          <span class="cir-txt">통증의<br />세분화
+                                            치료
+                                          </span>
+                                        </div>
+                                        <div class="circle-txt">
+                                          <span class="c-txt flex flex-col">
+                                            <h3 class="text-[1.3rem]">
+                                              모든 자세의 허리 통증
+                                            </h3>
+                                            <p>
+                                              자세에 따른 모든 허리 통증의 원인이
+                                              다르므로 통증을 세분화하여 치료함.
+                                            </p>
+                                          </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="swiper-slide mo-sub-swipers">
+                                      <div class="per-box flex box2">
+                                        <div class="circle">
+                                          <span class="cir-txt pt-[1.25rem]">
+                                            초음파 가이드<br />
+                                            정밀한<br />약침
+                                            치료</span>
+                                        </div>
+                                        <div class="circle-txt">
+                                          <span class="c-txt flex flex-col">
+                                            <h3 class="text-[1.3rem]">
+                                              초음파 영상을 필요로 하는 질환군
+                                            </h3>
+                                            <p>
+                                              치료 단계에 따른 초음파 가이드약침
+                                              시술을 함.
+                                            </p>
+                                          </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="swiper-slide mo-sub-swipers">
+                                      <div class="per-box flex box3">
+                                        <div class="circle">
+                                          <span class="cir-txt">척추 구조이상<br />추나 교정치료</span>
+                                        </div>
+                                        <div class="circle-txt">
+                                          <span class="c-txt flex flex-col">
+                                            <h3 class="text-[1.3rem]">
+                                              구조 이상으로 인한 통증
+                                            </h3>
+                                            <p>
+                                              거북목, 일자목, 골반경사, 라운드 숄더, 협착증
+                                              등 추나요법 교정치료를 시행함.
+                                            </p>
+                                          </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-pagination swiper-page"></div>
+                                </div>
+                              </div>
+    
+                            </section>
+                          </div>
+    
+                          <section class="tab-1-section">
+                            <div class="tab-1-section-con mx-auto">
+                              <div class="mo-whole-box">
+                                <div class="mo-spine">
+                                  <h2 class="mo-spine-tit">척추관절</h2>
+                                  <h3 class="mo-spine-sub-txt">비수술 한방 치료</h3>
+                                </div>
+                                <div class="mo-spine-cure-box">
+                                  <div class="mo-spine-1-box">
+                                    <div class="mo-spine-1-img">
+                                      <img src="../images/초음파플러스주사.png" alt="초음파주사이미지">
+                                    </div>
+                                    <div class="mo-spine-1-tit">
+                                      <p class="mo-spine-1-txt">초음파 약침 시술</p>
+                                    </div>
+                                    <div class="mo-spine-explain">
+                                      <h3 class="mo-spine-ex-txt">디스크가 신경을 누르는 것을 줄인다.</h3>
+                                    </div>
+                                  </div>
+    
+                                  <div class="mo-spine-2-box">
+                                    <div class="mo-spine-1-img mo-choona">
+                                      <img src="../images/척추추나.png" alt="척추추나이미지">
+                                    </div>
+                                    <div class="mo-spine-1-tit">
+                                      <p class="mo-spine-1-txt">추나요법</p>
+                                    </div>
+                                    <div class="mo-spine-explain">
+                                      <h3 class="mo-spine-ex-txt">디스크 협착으로 줄어든 신경통로 확장</h3>
+                                    </div>
+                                  </div>
+    
+                                  <div class="mo-spine-1-box mo-spine-3-box">
+                                    <div class="mo-spine-1-img mo-hanyak">
+                                      <img src="../images/치료한약.png" alt="척추한약이미지">
+                                    </div>
+                                    <div class="mo-spine-1-tit">
+                                      <p class="mo-spine-1-txt">치료 한약</p>
+                                    </div>
+                                    <div class="mo-spine-explain">
+                                      <h3 class="mo-spine-ex-txt text-center">척추질환으로 인한 염증의 완화<br>척추강화 촉진</h3>
+                                    </div>
+                                  </div>
+    
+                                </div>
+                                <div class="spine-cure-target">
+                                  <div class="spine-target-tit">
+                                    <h1 class="target-txt">척추통증 치료 대상</h1>
+                                  </div>
+                                  <div class="target-1 spine-targets">척추관 협착증</div>
+                                  <div class="target-2 spine-targets">
+                                    추간판 탈출증
+                                  </div>
+                                  <div class="target-3 spine-targets">후관절 증후군</div>
+                                  <div class="target-4 spine-targets">거북목, 일자목</div>
+                                  <div class="target-5 spine-targets">좌골신경통</div>
+                                  <div class="target-6 spine-targets">척추측만증</div>
+                                </div>
+                                <!-- 탭바디 마지막콘텐츠 -->
+                                <div class="mo-tab-last-content">
+                                  <div class="mo-last-tit">
+                                    <h2 class="mo-last-txt">치료 효과</h2>
+                                  </div>
+                                  <div class="mo-tab-grid-con">
+                                    <div class="mo-tab-grids">통증을 완화하고 염증을 예방합니다.</div>
+                                    <div class="mo-tab-grids">긴장된 근육을 이완시키고 신경통증을 예방합니다.</div>
+                                    <div class="mo-tab-grids">굳거나 유착된 인대를 정상화 시킵니다.</div>
+                                    <div class="mo-tab-grids">원활한 움직임을 만들어 일상으로 복귀시킵니다.</div>
+                                  </div>
+                                </div>
+                              </div>
+    
+                            </div>
+                          </section>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="mo-tab-content mo-tab-content-2">
+                        <div class="mo-tab-body-con mx-auto">
+                          <div class="mo-six-points">
+                            <h2 class="six-points-txt">
+                              나을한방병원 6대 핵심 치료 원칙
+                            </h2>
+                          </div>
+                          <div class="mo-sub-swiper-wrap">
+                            <section class="mo-sub-section relative">
+                              <div class="inner mx-auto">
+                                <div class="swiper mo-sub-swiper-con w-full relative">
+                                  <div class="swiper-wrapper">
+                                    <div class="swiper-slide mo-sub-swipers">
+                                      <div class="per-box box1 flex">
+                                        <div class="circle">
+                                          <span class="cir-txt">통증 발생<br />과정 치료
+                                          </span>
+                                        </div>
+                                        <div class="circle-txt">
+                                          <span class="c-txt flex flex-col">
+                                            <h3 class="text-[1.3rem]">
+                                              허리-다리 통증 및 저림
+                                            </h3>
+                                            <p>
+                                              근막 -> 근육 -> 신경 순으로 치료
+                                              통증이 시작된 원인이 제거되지
+                                              않으면
+                                              통증이 개선되어도 추후 재발 가능성 있음.
+                                            </p>
+                                          </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="swiper-slide mo-sub-swipers">
+                                      <div class="per-box flex box2">
+                                        <div class="circle">
+                                          <span class="cir-txt">
+                                            단계적 <br />약침 치료</span>
+                                        </div>
+                                        <div class="circle-txt">
+                                          <span class="c-txt flex flex-col">
+                                            <h3 class="text-[1.3rem]">
+                                              질병군마다 알맞은 약침 약물 선정
+                                            </h3>
+                                            <p>
+                                              목적에 따른 약침 시술의 다양성
+                                              (근막 이완, 항염증, 재생,신경 압박 해소)
+                                            </p>
+                                          </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="swiper-slide mo-sub-swipers">
+                                      <div class="per-box flex box3">
+                                        <div class="circle">
+                                          <span class="cir-txt">만성질환<br />한약 재생<br />치료</span>
+                                        </div>
+                                        <div class="circle-txt">
+                                          <span class="c-txt flex flex-col">
+                                            <h3 class="text-[1.3rem]">
+                                              환자분의 재생능력
+                                            </h3>
+                                            <p>
+                                              자생력 저하시 지속되는 만성질환엔 자생력을
+                                              높이는 한약 치료를 함.
+                                            </p>
+                                          </span>
+                                        </div>
+                                      </div>
+                                    </div>
+    
+                                    <div class="swiper-slide mo-sub-swipers">
+                                      <div class="per-box box1 flex">
+                                        <div class="circle">
+                                          <span class="cir-txt">통증의<br />세분화
+                                            치료
+                                          </span>
+                                        </div>
+                                        <div class="circle-txt">
+                                          <span class="c-txt flex flex-col">
+                                            <h3 class="text-[1.3rem]">
+                                              모든 자세의 허리 통증
+                                            </h3>
+                                            <p>
+                                              자세에 따른 모든 허리 통증의 원인이
+                                              다르므로 통증을 세분화하여 치료함.
+                                            </p>
+                                          </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="swiper-slide mo-sub-swipers">
+                                      <div class="per-box flex box2">
+                                        <div class="circle">
+                                          <span class="cir-txt pt-[1.25rem]">
+                                            초음파 가이드<br />
+                                            정밀한<br />약침
+                                            치료</span>
+                                        </div>
+                                        <div class="circle-txt">
+                                          <span class="c-txt flex flex-col">
+                                            <h3 class="text-[1.3rem]">
+                                              초음파 영상을 필요로 하는 질환군
+                                            </h3>
+                                            <p>
+                                              치료 단계에 따른 초음파 가이드약침
+                                              시술을 함.
+                                            </p>
+                                          </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="swiper-slide mo-sub-swipers">
+                                      <div class="per-box flex box3">
+                                        <div class="circle">
+                                          <span class="cir-txt">척추 구조이상<br />추나 교정치료</span>
+                                        </div>
+                                        <div class="circle-txt">
+                                          <span class="c-txt flex flex-col">
+                                            <h3 class="text-[1.3rem]">
+                                              구조 이상으로 인한 통증
+                                            </h3>
+                                            <p>
+                                              거북목, 일자목, 골반경사, 라운드 숄더, 협착증
+                                              등 추나요법 교정치료를 시행함.
+                                            </p>
+                                          </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-pagination swiper-page"></div>
+    
+                                </div>
+                              </div>
+    
+                            </section>
+                          </div>
+    
+                          <section class="tab-1-section">
+                            <div class="tab-1-section-con mx-auto">
+                              <div class="mo-whole-box">
+                                <div class="mo-spine">
+                                  <h2 class="mo-spine-tit">목 디스크/ 허리디스크</h2>
+                                  <h3 class="mo-spine-sub-txt">진통제는 이제 그만!</h3>
+                                </div>
+                                <div class="mo-spine-cure-box">
+                                  <div class="mo-spine-1-box">
+                                    <div class="mo-spine-1-img">
+                                      <img src="../images/목디스크모바일.png" alt="목디스크이미지">
+                                    </div>
+                                    <div class="mo-spine-1-tit">
+                                      <p class="mo-spine-1-txt">초음파 약침 시술</p>
+                                    </div>
+                                    <div class="mo-spine-explain">
+                                      <h3 class="mo-spine-ex-txt">디스크가 신경을 누르는 것을 줄인다.</h3>
+                                    </div>
+                                  </div>
+    
+                                  <div class="mo-spine-2-box">
+                                    <div class="mo-spine-1-img mo-choona">
+                                      <img src="../images/모바일허리디스크.png" alt="허리디스크이미지">
+                                    </div>
+                                    <div class="mo-spine-1-tit">
+                                      <p class="mo-spine-1-txt">추나요법</p>
+                                    </div>
+                                    <div class="mo-spine-explain">
+                                      <h3 class="mo-spine-ex-txt">디스크 협착으로 줄어든 신경통로 확장</h3>
+                                    </div>
+                                  </div>
+    
+                                </div>
+                                <div class="spine-cure-target">
+                                  <div class="spine-target-tit">
+                                    <h1 class="target-txt">디스크 나을탕 건강보험 적용!</h1>
+                                  </div>
+                                  <div class="target-1 spine-targets">디스크나을탕으로 디스크 회복</div>
+                                  <div class="target-2 spine-targets">
+                                    침, 약침으로 염증 제거 및 디스크회복
+                                  </div>
+                                  <div class="target-3 spine-targets">1년에 20일치 본인부담금 30%</div>
+                                  <div class="target-4 spine-targets">디스크 나을탕 실손보험 혜택</div>
+                                  <div class="target-5 spine-targets">건강보험 되는 디스크 세트 치료</div>
+    
+                                </div>
+                                <!-- 탭바디 마지막콘텐츠 -->
+                                <div class="mo-tab-last-content">
+                                  <div class="mo-last-tit">
+                                    <h2 class="mo-last-txt">치료 효과</h2>
+                                  </div>
+                                  <div class="mo-tab-grid-con">
+                                    <div class="mo-tab-grids">통증을 완화하고 염증을 예방합니다.</div>
+                                    <div class="mo-tab-grids">긴장된 근육을 이완시키고 신경통증을 예방합니다.</div>
+                                    <div class="mo-tab-grids">굳거나 유착된 인대를 정상화 시킵니다.</div>
+                                    <div class="mo-tab-grids">원활한 움직임을 만들어 일상으로 복귀시킵니다.</div>
+                                  </div>
+                                </div>
+                              </div>
+    
+                            </div>
+                          </section>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="mo-tab-content mo-tab-content-3">
+                        <div class="mo-tab-body-con mx-auto">
+                          <div class="mo-six-points">
+                            <h2 class="six-points-txt">
+                              나을한방병원 6대 핵심 치료 원칙
+                            </h2>
+                          </div>
+                          <div class="mo-sub-swiper-wrap">
+                            <section class="mo-sub-section relative">
+                              <div class="inner mx-auto">
+                                <div class="swiper mo-sub-swiper-con w-full relative">
+                                  <div class="swiper-wrapper">
+                                    <div class="swiper-slide mo-sub-swipers">
+                                      <div class="per-box box1 flex">
+                                        <div class="circle">
+                                          <span class="cir-txt">통증 발생<br />과정 치료
+                                          </span>
+                                        </div>
+                                        <div class="circle-txt">
+                                          <span class="c-txt flex flex-col">
+                                            <h3 class="text-[1.3rem]">
+                                              허리-다리 통증 및 저림
+                                            </h3>
+                                            <p>
+                                              근막 -> 근육 -> 신경 순으로 치료
+                                              통증이 시작된 원인이 제거되지
+                                              않으면
+                                              통증이 개선되어도 추후 재발 가능성 있음.
+                                            </p>
+                                          </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="swiper-slide mo-sub-swipers">
+                                      <div class="per-box flex box2">
+                                        <div class="circle">
+                                          <span class="cir-txt">
+                                            단계적 <br />약침 치료</span>
+                                        </div>
+                                        <div class="circle-txt">
+                                          <span class="c-txt flex flex-col">
+                                            <h3 class="text-[1.3rem]">
+                                              질병군마다 알맞은 약침 약물 선정
+                                            </h3>
+                                            <p>
+                                              목적에 따른 약침 시술의 다양성
+                                              (근막 이완, 항염증, 재생,신경 압박 해소)
+                                            </p>
+                                          </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="swiper-slide mo-sub-swipers">
+                                      <div class="per-box flex box3">
+                                        <div class="circle">
+                                          <span class="cir-txt">만성질환<br />한약 재생<br />치료</span>
+                                        </div>
+                                        <div class="circle-txt">
+                                          <span class="c-txt flex flex-col">
+                                            <h3 class="text-[1.3rem]">
+                                              환자분의 재생능력
+                                            </h3>
+                                            <p>
+                                              자생력 저하시 지속되는 만성질환엔 자생력을
+                                              높이는 한약 치료를 함.
+                                            </p>
+                                          </span>
+                                        </div>
+                                      </div>
+                                    </div>
+    
+                                    <div class="swiper-slide mo-sub-swipers">
+                                      <div class="per-box box1 flex">
+                                        <div class="circle">
+                                          <span class="cir-txt">통증의<br />세분화
+                                            치료
+                                          </span>
+                                        </div>
+                                        <div class="circle-txt">
+                                          <span class="c-txt flex flex-col">
+                                            <h3 class="text-[1.3rem]">
+                                              모든 자세의 허리 통증
+                                            </h3>
+                                            <p>
+                                              자세에 따른 모든 허리 통증의 원인이
+                                              다르므로 통증을 세분화하여 치료함.
+                                            </p>
+                                          </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="swiper-slide mo-sub-swipers">
+                                      <div class="per-box flex box2">
+                                        <div class="circle">
+                                          <span class="cir-txt pt-[1.25rem]">
+                                            초음파 가이드<br />
+                                            정밀한<br />약침
+                                            치료</span>
+                                        </div>
+                                        <div class="circle-txt">
+                                          <span class="c-txt flex flex-col">
+                                            <h3 class="text-[1.3rem]">
+                                              초음파 영상을 필요로 하는 질환군
+                                            </h3>
+                                            <p>
+                                              치료 단계에 따른 초음파 가이드약침
+                                              시술을 함.
+                                            </p>
+                                          </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="swiper-slide mo-sub-swipers">
+                                      <div class="per-box flex box3">
+                                        <div class="circle">
+                                          <span class="cir-txt">척추 구조이상<br />추나 교정치료</span>
+                                        </div>
+                                        <div class="circle-txt">
+                                          <span class="c-txt flex flex-col">
+                                            <h3 class="text-[1.3rem]">
+                                              구조 이상으로 인한 통증
+                                            </h3>
+                                            <p>
+                                              거북목, 일자목, 골반경사, 라운드 숄더, 협착증
+                                              등 추나요법 교정치료를 시행함.
+                                            </p>
+                                          </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-pagination swiper-page"></div>
+    
+                                </div>
+                              </div>
+    
+                            </section>
+                          </div>
+    
+                          <section class="tab-1-section">
+                            <div class="tab-1-section-con mx-auto">
+                              <div class="mo-whole-box">
+                                <div class="mo-spine">
+                                  <h2 class="mo-spine-tit">첩약(탕약)</h2>
+                                  <h3 class="mo-spine-sub-txt">건강보험적용</h3>
+                                </div>
+                                <div class="mo-spine-cure-box">
+                                  <div class="mo-spine-1-box">
+                                    <div class="mo-spine-1-img">
+                                      <img src="../images/모바일구안와사.png" alt="구안와사이미지">
+                                    </div>
+                                    <div class="mo-spine-1-tit">
+                                      <p class="mo-spine-1-txt">구안와사</p>
+                                    </div>
+                                    <div class="mo-spine-explain">
+                                      <h3 class="mo-spine-ex-txt">질환에 맞춘 한약 처방</h3>
+                                    </div>
+                                  </div>
+    
+                                  <div class="mo-spine-2-box">
+                                    <div class="mo-spine-1-img mo-choona">
+                                      <img src="../images/모바일중풍.png" alt="중풍 이미지">
+                                    </div>
+                                    <div class="mo-spine-1-tit">
+                                      <p class="mo-spine-1-txt">중풍</p>
+                                    </div>
+                                    <div class="mo-spine-explain">
+                                      <h3 class="mo-spine-ex-txt">혈류 개선을 통한 중풍 치료 및 예방</h3>
+                                    </div>
+                                  </div>
+    
+                                  <div class="mo-spine-1-box mo-spine-3-box">
+                                    <div class="mo-spine-1-img mo-hanyak">
+                                      <img src="../images/모바일생리통.png" alt="생리통 이미지">
+                                    </div>
+                                    <div class="mo-spine-1-tit">
+                                      <p class="mo-spine-1-txt">생리통</p>
+                                    </div>
+                                    <div class="mo-spine-explain">
+                                      <h3 class="mo-spine-ex-txt text-center">맞춤한약으로 생리통 경감</h3>
+                                    </div>
+                                  </div>
+    
+                                </div>
+                                <div class="spine-cure-target">
+                                  <div class="spine-target-tit">
+                                    <h1 class="target-txt">건강보험첩약 가능 대상</h1>
+                                  </div>
+                                  <div class="target-1 spine-targets">구안와사, 안면 신경마비</div>
+                                  <div class="target-2 spine-targets">
+                                    중풍
+                                  </div>
+                                  <div class="target-3 spine-targets">알레르기 비염</div>
+                                  <div class="target-4 spine-targets">생리통</div>
+                                  <div class="target-5 spine-targets">기능성 소화장애</div>
+                                  <div class="target-6 spine-targets">허리디스크, 요추 추간판 탈출증</div>
+                                </div>
+                                <!-- 탭바디 마지막콘텐츠 -->
+                                <div class="mo-tab-last-content">
+                                  <div class="mo-last-tit">
+                                    <h2 class="mo-last-txt">치료 효과</h2>
+                                  </div>
+                                  <div class="mo-tab-grid-con">
+                                    <div class="mo-tab-grids">통증을 완화하고 염증을 예방합니다.</div>
+                                    <div class="mo-tab-grids">긴장된 근육을 이완시키고 신경통증을 예방합니다.</div>
+                                    <div class="mo-tab-grids">굳거나 유착된 인대를 정상화 시킵니다.</div>
+                                    <div class="mo-tab-grids">원활한 움직임을 만들어 일상으로 복귀시킵니다.</div>
+                                  </div>
+                                </div>
+                              </div>
+    
+                            </div>
+                          </section>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="mo-tab-content mo-tab-content-4">
+                        <div class="mo-tab-body-con mx-auto">
+                          <div class="mo-six-points">
+                            <h2 class="six-points-txt">
+                              나을한방병원 6대 핵심 치료 원칙
+                            </h2>
+                          </div>
+                          <div class="mo-sub-swiper-wrap">
+                            <section class="mo-sub-section relative">
+                              <div class="inner mx-auto">
+                                <div class="swiper mo-sub-swiper-con w-full relative">
+                                  <div class="swiper-wrapper">
+                                    <div class="swiper-slide mo-sub-swipers">
+                                      <div class="per-box box1 flex">
+                                        <div class="circle">
+                                          <span class="cir-txt">통증 발생<br />과정 치료
+                                          </span>
+                                        </div>
+                                        <div class="circle-txt">
+                                          <span class="c-txt flex flex-col">
+                                            <h3 class="text-[1.3rem]">
+                                              허리-다리 통증 및 저림
+                                            </h3>
+                                            <p>
+                                              근막 -> 근육 -> 신경 순으로 치료
+                                              통증이 시작된 원인이 제거되지
+                                              않으면
+                                              통증이 개선되어도 추후 재발 가능성 있음.
+                                            </p>
+                                          </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="swiper-slide mo-sub-swipers">
+                                      <div class="per-box flex box2">
+                                        <div class="circle">
+                                          <span class="cir-txt">
+                                            단계적 <br />약침 치료</span>
+                                        </div>
+                                        <div class="circle-txt">
+                                          <span class="c-txt flex flex-col">
+                                            <h3 class="text-[1.3rem]">
+                                              질병군마다 알맞은 약침 약물 선정
+                                            </h3>
+                                            <p>
+                                              목적에 따른 약침 시술의 다양성
+                                              (근막 이완, 항염증, 재생,신경 압박 해소)
+                                            </p>
+                                          </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="swiper-slide mo-sub-swipers">
+                                      <div class="per-box flex box3">
+                                        <div class="circle">
+                                          <span class="cir-txt">만성질환<br />한약 재생<br />치료</span>
+                                        </div>
+                                        <div class="circle-txt">
+                                          <span class="c-txt flex flex-col">
+                                            <h3 class="text-[1.3rem]">
+                                              환자분의 재생능력
+                                            </h3>
+                                            <p>
+                                              자생력 저하시 지속되는 만성질환엔 자생력을
+                                              높이는 한약 치료를 함.
+                                            </p>
+                                          </span>
+                                        </div>
+                                      </div>
+                                    </div>
+    
+                                    <div class="swiper-slide mo-sub-swipers">
+                                      <div class="per-box box1 flex">
+                                        <div class="circle">
+                                          <span class="cir-txt">통증의<br />세분화
+                                            치료
+                                          </span>
+                                        </div>
+                                        <div class="circle-txt">
+                                          <span class="c-txt flex flex-col">
+                                            <h3 class="text-[1.3rem]">
+                                              모든 자세의 허리 통증
+                                            </h3>
+                                            <p>
+                                              자세에 따른 모든 허리 통증의 원인이
+                                              다르므로 통증을 세분화하여 치료함.
+                                            </p>
+                                          </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="swiper-slide mo-sub-swipers">
+                                      <div class="per-box flex box2">
+                                        <div class="circle">
+                                          <span class="cir-txt pt-[1.25rem]">
+                                            초음파 가이드<br />
+                                            정밀한<br />약침
+                                            치료</span>
+                                        </div>
+                                        <div class="circle-txt">
+                                          <span class="c-txt flex flex-col">
+                                            <h3 class="text-[1.3rem]">
+                                              초음파 영상을 필요로 하는 질환군
+                                            </h3>
+                                            <p>
+                                              치료 단계에 따른 초음파 가이드약침
+                                              시술을 함.
+                                            </p>
+                                          </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="swiper-slide mo-sub-swipers">
+                                      <div class="per-box flex box3">
+                                        <div class="circle">
+                                          <span class="cir-txt">척추 구조이상<br />추나 교정치료</span>
+                                        </div>
+                                        <div class="circle-txt">
+                                          <span class="c-txt flex flex-col">
+                                            <h3 class="text-[1.3rem]">
+                                              구조 이상으로 인한 통증
+                                            </h3>
+                                            <p>
+                                              거북목, 일자목, 골반경사, 라운드 숄더, 협착증
+                                              등 추나요법 교정치료를 시행함.
+                                            </p>
+                                          </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-pagination swiper-page"></div>
+    
+                                </div>
+                              </div>
+    
+                            </section>
+                          </div>
+    
+                          <section class="tab-1-section">
+                            <div class="tab-1-section-con mx-auto">
+                              <div class="mo-whole-box">
+                                <div class="mo-spine">
+                                  <h2 class="mo-spine-tit">안면마비</h2>
+                                  <h3 class="mo-spine-sub-txt">골든타임을 놓치지 마세요</h3>
+                                </div>
+                                <div class="mo-spine-cure-box">
+                                  <div class="mo-spine-1-box">
+                                    <div class="mo-spine-1-img">
+                                      <img src="../images/모바일안면마비.png" alt="안면마비">
+                                    </div>
+                                    <div class="mo-spine-1-tit">
+                                      <p class="mo-spine-1-txt">약침 시술</p>
+                                    </div>
+                                    <div class="mo-spine-explain">
+                                      <h3 class="mo-spine-ex-txt">신경의 염증 제거</h3>
+                                    </div>
+                                  </div>
+    
+                                  <div class="mo-spine-2-box">
+                                    <div class="mo-spine-1-img mo-choona">
+                                      <img src="../images/모바일두뇌혈액순환.png" alt="두뇌혈액순환">
+                                    </div>
+                                    <div class="mo-spine-1-tit">
+                                      <p class="mo-spine-1-txt">침 부황요법</p>
+                                    </div>
+                                    <div class="mo-spine-explain">
+                                      <h3 class="mo-spine-ex-txt">두뇌와 안면부의 혈액순환 촉진</h3>
+                                    </div>
+                                  </div>
+    
+                                  <div class="mo-spine-1-box mo-spine-3-box">
+                                    <div class="mo-spine-1-img mo-hanyak">
+                                      <img src="../images/척추치료한약.png" alt="한약이미지">
+                                    </div>
+                                    <div class="mo-spine-1-tit">
+                                      <p class="mo-spine-1-txt">치료 한약</p>
+                                    </div>
+                                    <div class="mo-spine-explain">
+                                      <h3 class="mo-spine-ex-txt text-center">면역력을 키워 재발을 방지</h3>
+                                    </div>
+                                  </div>
+    
+                                </div>
+                                <div class="spine-cure-target">
+                                  <div class="spine-target-tit">
+                                    <h1 class="target-txt">안면마비 치료 대상</h1>
+                                  </div>
+                                  <div class="target-1 spine-targets">얼굴이 편측으로 치우처짐</div>
+                                  <div class="target-2 spine-targets">
+                                    눈을 감지 못함
+                                  </div>
+                                  <div class="target-3 spine-targets">귀 뒷부분의 통증이 생김</div>
+                                  <div class="target-4 spine-targets">얼굴 모양이 삐뚤어짐</div>
+                                  <div class="target-5 spine-targets">이상감각이나, 미각이상, 이명 증상</div>
+    
+                                </div>
+                                <!-- 탭바디 마지막콘텐츠 -->
+                                <div class="mo-tab-last-content">
+                                  <div class="mo-last-tit">
+                                    <h2 class="mo-last-txt">치료 효과</h2>
+                                  </div>
+                                  <div class="mo-tab-grid-con">
+                                    <div class="mo-tab-grids">통증을 완화하고 염증을 예방합니다.</div>
+                                    <div class="mo-tab-grids">긴장된 근육을 이완시키고 신경통증을 예방합니다.</div>
+                                    <div class="mo-tab-grids">굳거나 유착된 근육, 신경을 정상화 시킵니다.</div>
+                                    <div class="mo-tab-grids">원활한 움직임을 만들어 일상으로 복귀시킵니다.</div>
+                                  </div>
+                                </div>
+                              </div>
+    
+                            </div>
+                          </section>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="mo-tab-content mo-tab-content-5">
+                        <div class="mo-tab-body-con mx-auto">
+                          <div class="mo-six-points">
+                            <h2 class="six-points-txt">
+                              나을한방병원 6대 핵심 치료 원칙
+                            </h2>
+                          </div>
+                          <div class="mo-sub-swiper-wrap">
+                            <section class="mo-sub-section relative">
+                              <div class="inner mx-auto">
+                                <div class="swiper mo-sub-swiper-con w-full relative">
+                                  <div class="swiper-wrapper">
+                                    <div class="swiper-slide mo-sub-swipers">
+                                      <div class="per-box box1 flex">
+                                        <div class="circle">
+                                          <span class="cir-txt">통증 발생<br />과정 치료
+                                          </span>
+                                        </div>
+                                        <div class="circle-txt">
+                                          <span class="c-txt flex flex-col">
+                                            <h3 class="text-[1.3rem]">
+                                              허리-다리 통증 및 저림
+                                            </h3>
+                                            <p>
+                                              근막 -> 근육 -> 신경 순으로 치료
+                                              통증이 시작된 원인이 제거되지
+                                              않으면
+                                              통증이 개선되어도 추후 재발 가능성 있음.
+                                            </p>
+                                          </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="swiper-slide mo-sub-swipers">
+                                      <div class="per-box flex box2">
+                                        <div class="circle">
+                                          <span class="cir-txt">
+                                            단계적 <br />약침 치료</span>
+                                        </div>
+                                        <div class="circle-txt">
+                                          <span class="c-txt flex flex-col">
+                                            <h3 class="text-[1.3rem]">
+                                              질병군마다 알맞은 약침 약물 선정
+                                            </h3>
+                                            <p>
+                                              목적에 따른 약침 시술의 다양성
+                                              (근막 이완, 항염증, 재생,신경 압박 해소)
+                                            </p>
+                                          </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="swiper-slide mo-sub-swipers">
+                                      <div class="per-box flex box3">
+                                        <div class="circle">
+                                          <span class="cir-txt">만성질환<br />한약 재생<br />치료</span>
+                                        </div>
+                                        <div class="circle-txt">
+                                          <span class="c-txt flex flex-col">
+                                            <h3 class="text-[1.3rem]">
+                                              환자분의 재생능력
+                                            </h3>
+                                            <p>
+                                              자생력 저하시 지속되는 만성질환엔 자생력을
+                                              높이는 한약 치료를 함.
+                                            </p>
+                                          </span>
+                                        </div>
+                                      </div>
+                                    </div>
+    
+                                    <div class="swiper-slide mo-sub-swipers">
+                                      <div class="per-box box1 flex">
+                                        <div class="circle">
+                                          <span class="cir-txt">통증의<br />세분화
+                                            치료
+                                          </span>
+                                        </div>
+                                        <div class="circle-txt">
+                                          <span class="c-txt flex flex-col">
+                                            <h3 class="text-[1.3rem]">
+                                              모든 자세의 허리 통증
+                                            </h3>
+                                            <p>
+                                              자세에 따른 모든 허리 통증의 원인이
+                                              다르므로 통증을 세분화하여 치료함.
+                                            </p>
+                                          </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="swiper-slide mo-sub-swipers">
+                                      <div class="per-box flex box2">
+                                        <div class="circle">
+                                          <span class="cir-txt pt-[1.25rem]">
+                                            초음파 가이드<br />
+                                            정밀한<br />약침
+                                            치료</span>
+                                        </div>
+                                        <div class="circle-txt">
+                                          <span class="c-txt flex flex-col">
+                                            <h3 class="text-[1.3rem]">
+                                              초음파 영상을 필요로 하는 질환군
+                                            </h3>
+                                            <p>
+                                              치료 단계에 따른 초음파 가이드약침
+                                              시술을 함.
+                                            </p>
+                                          </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="swiper-slide mo-sub-swipers">
+                                      <div class="per-box flex box3">
+                                        <div class="circle">
+                                          <span class="cir-txt">척추 구조이상<br />추나 교정치료</span>
+                                        </div>
+                                        <div class="circle-txt">
+                                          <span class="c-txt flex flex-col">
+                                            <h3 class="text-[1.3rem]">
+                                              구조 이상으로 인한 통증
+                                            </h3>
+                                            <p>
+                                              거북목, 일자목, 골반경사, 라운드 숄더, 협착증
+                                              등 추나요법 교정치료를 시행함.
+                                            </p>
+                                          </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-pagination swiper-page"></div>
+                                </div>
+                              </div>
+    
+                            </section>
+                          </div>
+    
+                          <section class="tab-1-section">
+                            <div class="tab-1-section-con mx-auto">
+                              <div class="mo-whole-box">
+                                <div class="mo-spine">
+                                  <h2 class="mo-spine-tit">초음파 가이드</h2>
+                                  <h3 class="mo-spine-sub-txt">비수술 한방 치료</h3>
+                                </div>
+                                <div class="mo-spine-cure-box">
+                                  <div class="mo-spine-1-box">
+                                    <div class="mo-spine-1-img">
+                                      <img src="../images/초음파약침.png" alt="초음파가이드약침주사">
+                                    </div>
+                                    <div class="mo-spine-1-tit">
+                                      <p class="mo-spine-1-txt">초음파 약침 시술</p>
+                                    </div>
+                                    <div class="mo-spine-explain">
+                                      <h3 class="mo-spine-ex-txt">정확한 위치에 환부 시술</h3>
+                                    </div>
+                                  </div>
+    
+                                  <div class="mo-spine-2-box">
+                                    <div class="mo-spine-1-img mo-choona">
+                                      <img src="../images/초음파주사.png" alt="초음파가이드약침이미지">
+                                    </div>
+                                    <div class="mo-spine-1-tit">
+                                      <p class="mo-spine-1-txt">초음파 가이드 약침</p>
+                                    </div>
+                                    <div class="mo-spine-explain">
+                                      <h3 class="mo-spine-ex-txt">광범위한 질환에 적용 가능</h3>
+                                    </div>
+                                  </div>
+    
+                                  <div class="mo-spine-1-box mo-spine-3-box">
+                                    <div class="mo-spine-1-img mo-hanyak">
+                                      <img src="../images/초음파화면.png" alt="초음파화면">
+                                    </div>
+                                    <div class="mo-spine-1-tit">
+                                      <p class="mo-spine-1-txt">초음파</p>
+                                    </div>
+                                    <div class="mo-spine-explain">
+                                      <h3 class="mo-spine-ex-txt text-center">집중치료로 빠른 회복 기대</h3>
+                                    </div>
+                                  </div>
+    
+                                </div>
+                                <div class="spine-cure-target">
+                                  <div class="spine-target-tit">
+                                    <h1 class="target-txt">초음파가이드 약침 치료 대상</h1>
+                                  </div>
+                                  <div class="target-1 spine-targets">만성적으로 오래 앓아온 질환</div>
+                                  <div class="target-2 spine-targets">
+                                    허리 디스크, 목디스크 관절 통증
+                                  </div>
+                                  <div class="target-3 spine-targets">손목, 무릎 슬개 관절</div>
+                                  <div class="target-4 spine-targets">팔꿈치(테니스엘보우, 골프 엘보우)</div>
+                                  <div class="target-5 spine-targets">수부 및 족부(아킬레스건, 족저근막염)</div>
+                                  <div class="target-6 spine-targets">척추측만증</div>
+                                </div>
+                                <!-- 탭바디 마지막콘텐츠 -->
+                                <div class="mo-tab-last-content">
+                                  <div class="mo-last-tit">
+                                    <h2 class="mo-last-txt">치료 효과</h2>
+                                  </div>
+                                  <div class="mo-tab-grid-con">
+                                    <div class="mo-tab-grids">통증을 완화하고 염증을 예방합니다.</div>
+                                    <div class="mo-tab-grids">긴장된 근육을 이완시키고 신경통증을 예방합니다.</div>
+                                    <div class="mo-tab-grids">굳거나 유착된 인대를 정상화 시킵니다.</div>
+                                    <div class="mo-tab-grids">원활한 움직임을 만들어 일상으로 복귀시킵니다.</div>
+                                  </div>
+                                </div>
+                              </div>
+    
+                            </div>
+                          </section>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+    
+        <div class="mobile-footer-wrap hidden">
+          <footer class="mo-footer-wrap">
+            <div class="mo-footer-con mx-auto flex">
+              <div class="mo-footer-map">
+                <div>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d203061.99320381702!2d126.69158413587887!3d37.32253120198668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b6f875ae27c11%3A0x60f9dbb76d8a07e7!2z64KY7J2E7ZWc7J2Y7JuQ!5e0!3m2!1sko!2skr!4v1740937935661!5m2!1sko!2skr" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+              <div class="mo-footer-content-box">
+                <div class="mo-fo-content-con mx-auto">
+                  <div class="mo-footer-tit">
+                    <h1 class="mo-fo-txt">CONTACT</h1>
+                  </div>
+                  <div class="mo-footer-addr flex">
+                    <h2 class="mo-fo-addr flex">
+                      <img src="../images/주소.png" alt="주소이미지" />주소
+                    </h2>
+                    <p class="mo-addr">경기도 안산시 단원구 고잔O길 OOO</p>
+                  </div>
+                  <div class="mo-cure-time flex">
+                    <h2 class="mo-times flex">
+                      <img src="../images/진료시간.png" alt="진료시간 이미지" />진료시간
+                    </h2>
+                    <div class="mo-times-content">
+                      <p class="mo-date flex">평일</p>
+    
+                      <p class="mo-date-2">주말</p>
+                      <p class="mo-date-3">점심시간</p>
+                    </div>
+                    <div class="mo-clock">
+                      <p class="mo-time-1">오전 09:00 ~ 오후 08:30</p>
+                      <p class="mo-time-2">오전 10:00 ~ 오후 03:00</p>
+                      <p class="mo-lunch">오후 01:00 ~ 오후 02:00</p>
+                    </div>
+                  </div>
+                  <div class="mo-notice">
+                    <p class="mo-no-1">※ 주말은 점심시간 없이 진료</p>
+                    <p class="mo-no-2">※ 공휴일은 단축진료</p>
+                  </div>
+    
+                  <div class="mo-call flex">
+                    <h2 class="mo-calling flex">
+                      <img src="../images/대표전화.png" alt="대표전화 이미지" />대표전화
+                    </h2>
+                    <p class="mo-number">02-1234-5678</p>
+                  </div>
+                  <div class="mo-kakaotalk flex">
+                    <h2 class="mo-talktalk flex">
+                      <img src="../images/카카오톡이미지.png" alt="카카오톡 이미지" />
+                      SNS
+                    </h2>
+                    <div class="mo-sns-img flex">
+                      <img src="../images/sns카카오톡.png" alt="카카오톡 로고" />
+                      <img src="../images/유튜브이미지.png" alt="유튜브" />
+                      <img src="../images/네이버블로그.png" alt="네이버블로그" />
+    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mo-read-box">
+              <div class="mo-read flex">
+                <p>이용약관</p>
+                <p>개인정보처리방침</p>
+                <p>비급여안내</p>
+              </div>
+            </div>
+          </footer>
+          <footer class="mo-footer-2">
+            <div class="mo-footer__bottom-box">
+              <div class="mo-use-box">
+                <p class="mo-address text-[0.8rem]">
+                  주소 : 경기도 안산시 단원구 고잔O길 OOO-OO, O층
+                </p>
+                <p class="mo-enroll-num text-[0.9rem]">
+                  사업자 등록번호 : 1234-5678
+                </p>
+                <p class="mo-boss text-[0.9rem]">대표자 : 김OO</p>
+                <p class="mo-fax text-[0.9rem]">팩스 : 02-000-0000</p>
+              </div>
+              <div class="mo-copyright">
+                <p>
+                  Copyright 2025 ㅣ Naeul HOSPITAL OF KOREAN MEDICINE l All Rights
+                  Reserved
+                </p>
+              </div>
+            </div>
+          </footer>
+        </div>
+    
+      </div>
+    </div>
+    <div class="scroll-menu-box">
+      <ul class="scroll-dep1">
+        <li class="quick-btn">
+          <span>
+            <img src="../images/빠른상담.png" alt="상담예약">
+            상담예약
+          </span>
+        </li>
+        <li class="d">
+          <span>
+            <img src="../images/카카오톡이미지.png" alt="카카오톡 상담">
+            카톡상담
+          </span>
+        </li>
+        <li class="youtube-btn">
+          <a href="https://www.youtube.com/@Naeul-haniwon/videos" target="_blank"><span>
+              <img src="../images/유튜브이미지.png" alt="유튜브로 이동">
+              유튜브
+            </span></a>
+        </li>
+        <li class="blog-btn">
+          <a href="https://blog.naver.com/naeul_hani" target="_blank"><span><img src="../images/네이버블로그.png" alt="나을한방병원블로그">
+              블로그
+            </span></a>
+    
+        </li>
+        <li class="scroll-top-btn">
+          <span class="top-font">
+            TOP
+          </span>
+    
+        </li>
+      </ul>
+    </div>
+    <!-- 사이트맵 메뉴 -->
+    <div class="site-map-wrap">
+      <div class="site-maps">
+        <div class="map__close-btn">
+          <div class="close close-1"></div>
+          <div class="close close-2"></div>
+        </div>
+        <div class="site-map-tit">
+          <h1 class="site-txt">사이트맵</h1>
+        </div>
+        <div class="map-top-menu-box">
+          <nav class="map__menu-1">
+            <ul class="flex list-1">
+              <li>
+                <a href="#">병원소개
+                  <div class="screen">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </a>
+                <ul class="list-2">
+                  <li><a href="#">병원 층별안내</a></li>
+                  <li><a href="facility.html">시설안내</a></li>
+                  <li><a href="#">비급여항목</a></li>
+                  <li><a href="#">오시는길</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="facility.html">시설소개
+                  <div class="screen">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </a>
+    
+                <ul class="list-2">
+                  <li><a href="facility.html">시설둘러보기</a></li>
+                  <li><a href="facility.html">의료기기/장비</a></li>
+    
+                </ul>
+              </li>
+              <li>
+                <a href="subjects.html">진료안내
+                  <div class="screen">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </a>
+                <ul class="list-2">
+                  <li><a href="subjects.html">진료과목</a></li>
+                  <li><a href="subjects.html">진료시간</a></li>
+    
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="middle-line"></div>
+        <div class="map-bottom-menu-box">
+          <nav class="map__menu-2">
+            <ul class="flex list-4">
+              <li>
+                <a href="doctors.html">의료진소개
+                  <div class="screen">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </a>
+                <ul class="list-5">
+                  <li><a href="doctors.html">담당진료분야</a></li>
+                  <li><a href="doctors.html">약력</a></li>
+    
+                </ul>
+              </li>
+              <li>
+                <a href="#">전문클리닉
+                  <div class="screen">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </a>
+                <ul class="list-5">
+                  <li><a href="#">약침</a></li>
+                  <li><a href="#">태반약침</a></li>
+                  <li><a href="#">통증치료</a></li>
+                  <li><a href="#">추나요법</a></li>
+                  <li><a href="#">디스크치료</a></li>
+                  <li><a href="#">만성질환</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">한약안내
+                  <div class="screen">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </a>
+                <ul class="list-5">
+                  <li><a href="#">건강보험첩약</a></li>
+                  <li><a href="#">자동차보험첩약</a></li>
+                  <li><a href="#">체질맞춤한약</a></li>
+                  <li><a href="#">다이어트한약</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    
+    <div id="sub-1-wrap">
+      <div class="pc__top-bar-warp">
+    
+        <header class="top-bar">
+          <div class="top-bar-con mx-auto h-[120px] flex">
+            <div class="naeul-logo-box w-[230px] h-full flex items-center">
+              <a href="../index.html" class="logo flex">
+                <img class="logo-img" src="../images/찐로고.PNG" alt="나을한방병원로고">
+              </a>
+            </div>
+    
+            <nav class="top-bar__menu">
+    
+              <ul class="depth1 flex">
+                <div class="con mx-auto"></div>
+                <li>
+                  <a href="facility.html">병원소개</a>
+    
+                  <ul class="depth2">
+                    <li><a href="#">병원 층별안내</a></li>
+                    <li><a href="facility.html">시설안내</a></li>
+                    <li><a href="#">비급여항목</a></li>
+                    <li><a href="#">오시는 길</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="facility.html">시설소개</a>
+    
+                  <ul class="depth2">
+                    <li><a href="#">시설둘러보기</a></li>
+                    <li><a href="#">의료기기/장비</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="doctors.html">의료진소개</a>
+    
+                  <ul class="depth2">
+                    <li><a href="doctors.html">전문진료과</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">진료안내</a>
+    
+                  <ul class="depth2">
+                    <li><a href="#">진료과목</a></li>
+                    <li><a href="#">진료시간</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">전문클리닉</a>
+    
+                  <ul class="depth2">
+                    <li><a href="#">대용량약침</a></li>
+                    <li><a href="#">태반약침</a></li>
+                    <li><a href="#">통증치료</a></li>
+                    <li><a href="#">추나요법</a></li>
+                    <li><a href="#">디스크치료</a></li>
+                    <li><a href="#">만성질환</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">한약정보</a>
+    
+                  <ul class="depth2">
+                    <li><a href="#">건강보험첩약</a></li>
+                    <li><a href="#">자동차보험첩약</a></li>
+                    <li><a href="#">체질맞춤한약</a></li>
+                    <li><a href="#">다이어트한약</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">커뮤니티</a>
+    
+                  <ul class="depth2">
+                    <li><a href="#">치료후기</a></li>
+                    <li><a href="#">온라인상담</a></li>
+                    <li><a href="#">병원소식</a></li>
+    
+                  </ul>
+    
+                </li>
+              </ul>
+    
+            </nav>
+            <div class="top-bar__right-box">
+              <ul class="right-box flex">
+                <li class="right-search">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </li>
+                <li class="right-menu">
+                  <i class="fa-solid fa-bars"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </header>
+      </div>
+    
+      <!-- 서브페이지 시작 -->
+      <div class="checkup-box">
+        <h3 class="checkup-tit">진료과목</h3>
+        <div class="checkup-navi">
+          <a href="#"><i class="fas fa-home"></i></a>
+          <img src="../images/오른쪽화살표.png" alt="오른쪽 화살표" />
+          <span>진료안내</span>
+          <img src="../images/오른쪽화살표.png" alt="오른쪽 화살표" />
+          <span>진료과목</span>
+          <img src="../images/오른쪽화살표.png" alt="오른쪽 화살표" />
+          <span>허리디스크</span>
+        </div>
+      </div>
+      <section class="tab-section">
+        <div class="sub-tab-container mx-auto">
+          <div class="tab-menu-box">
+            <div class="tab-menu__head">
+              <ul class="flex sub-tab-dep1">
+                <li class="active">
+                  <p>척추통증</p>
+                </li>
+                <li>
+                  <p>디스크통증</p>
+                </li>
+                <li>
+                  <p>체질맞춤한약</p>
+                </li>
+                <li>
+                  <p>안면마비</p>
+                </li>
+                <li>
+                  <p>초음파약침</p>
+                </li>
+    
+              </ul>
+            </div>
+            <div class="tab-menu__body">
+              <ul class="flex">
+                <li class="active">
+                  <div class="tab-content tab-content-1">
+                    <div class="tab-body-con mx-auto">
+                      <div class="body-1-tit">
+                        <h1 class="spine">척추관 협착증</h1>
+                      </div>
+                      <div class="body-1">
+                      </div>
+                      <div class="perspective">
+                        <h1 class="per-txt">-나을 6대 핵심 치료원칙-</h1>
+                        <div class="per-box-wrap flex">
+                          <div class="per-1-wrap">
+                            <div class="per-box box1 flex">
+                              <div class="circle">
+                                <span class="cir-txt">통증 발생<br />과정 치료
+                                </span>
+                              </div>
+                              <div class="circle-txt">
+                                <span class="c-txt flex flex-col">
+                                  <h3 class="text-[1.7rem]">
+                                    허리-다리 통증 및 저림
+                                  </h3>
+                                  <p>
+                                    근막 -> 근육 -> 신경 순으로 치료
+                                    <br />통증이 시작된 원인이 제거되지
+                                    않으면<br />
+                                    통증이 개선되어도 추후 재발 가능성 있음.
+                                  </p>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="per-box flex box2">
+                              <div class="circle">
+                                <span class="cir-txt">
+                                단계적 <br />약침 치료</span>
+                              </div>
+                              <div class="circle-txt">
+                                <span class="c-txt flex flex-col">
+                                  <h3 class="text-[1.7rem]">
+                                    질병군마다 알맞은 약침 약물 선정
+                                  </h3>
+                                  <p>
+                                    목적에 따른 약침 시술의 다양성<br />
+                                    (근막 이완, 항염증, 재생,신경 압박 해소)
+                                  </p>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="per-box flex box3">
+                              <div class="circle">
+                                <span class="cir-txt">만성질환<br />한약 재생<br />치료</span>
+                              </div>
+                              <div class="circle-txt">
+                                <span class="c-txt flex flex-col">
+                                  <h3 class="text-[1.7rem]">
+                                    환자분의 재생능력
+                                  </h3>
+                                  <p>
+                                    자생력 저하시 지속되는 만성질환엔<br />자생력을
+                                    높이는 한약 치료를 함.
+                                  </p>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="per-2-wrap">
+                            <div class="per-box box1 flex">
+                              <div class="circle">
+                                <span class="cir-txt">통증의<br />세분화
+                                  치료
+                                </span>
+                              </div>
+                              <div class="circle-txt">
+                                <span class="c-txt flex flex-col">
+                                  <h3 class="text-[1.7rem]">
+                                    모든 자세의 허리 통증
+                                  </h3>
+                                  <p>
+                                    자세에 따른 모든 허리 통증의 원인이
+                                    <br />다르므로 통증을 세분화하여 치료함.
+                                  </p>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="per-box flex box2">
+                              <div class="circle">
+                                <span class="cir-txt pt-[1.25rem]">
+                                  초음파 가이드<br />
+                                  정밀한<br />약침
+                                  치료</span>
+                              </div>
+                              <div class="circle-txt">
+                                <span class="c-txt flex flex-col">
+                                  <h3 class="text-[1.7rem]">
+                                    초음파 영상을 필요로 하는 질환군
+                                  </h3>
+                                  <p>
+                                    치료 단계에 따른 초음파 가이드<br />약침
+                                    시술을 함.
+                                  </p>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="per-box flex box3">
+                              <div class="circle">
+                                <span class="cir-txt">척추 구조이상<br />추나 교정치료</span>
+                              </div>
+                              <div class="circle-txt">
+                                <span class="c-txt flex flex-col">
+                                  <h3 class="text-[1.7rem]">
+                                    구조 이상으로 인한 통증
+                                  </h3>
+                                  <p>
+                                    거북목, 일자목, 골반경사, 라운드 숄더,<br />협착증
+                                    등 추나요법 교정치료를 시행함.
+                                  </p>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+    
+                      <section class="tab-1-section">
+                        <div class="tab-1-section-con mx-auto">
+                          <div class="whole-box flex flex-col">
+                            <div class="explain flex-shrink-0">
+                              <div class="ex-txt">
+                                <h1 class="ex-tit">척추관절</h1>
+                                <h2 class="ex-sub">비수술 한방 치료</h2>
+                              </div>
+                              <p class="three-txt">
+                                척추질환 치료의 3가지 키워드
+                              </p>
+                              <div class="three-points-box">
+                                <div class="three-point point-1 flex">
+                                  <p class="third-num">01</p>
+                                  <p class="third-txt">
+                                    디스크가 신경을 누르는 것을 줄인다.
+                                  </p>
+                                </div>
+                                <div class="three-point point-2 flex">
+                                  <p class="third-num">02</p>
+                                  <p class="third-txt">
+                                    디스크 협착으로 좁아진 신경통로 확장
+                                  </p>
+                                </div>
+                                <div class="three-point point-3 flex">
+                                  <p class="third-num">03</p>
+                                  <p class="third-txt">
+                                    척추질환으로 인한 염증의 완화, 척추 강화
+                                    촉진
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="cure-explain-box flex">
+                              <div class="cure-explain">
+                                <div class="cure-img-box">
+                                  <img src="../images/초음파주사.png" alt="초음파 약침 시술 이미지" />
+                                </div>
+                                <div class="cure-text-box">
+                                  <p>초음파 약침 시술</p>
+                                  <p>신경눌림 해소</p>
+                                </div>
+                              </div>
+                              <div class="cure-explain">
+                                <div class="cure-img-box">
+                                  <img src="../images/추나요법쓰.png" alt="추나요법 이미지" />
+                                </div>
+                                <div class="cure-text-box">
+                                  <p>추나요법</p>
+                                  <p>신경통로 확장</p>
+                                </div>
+                              </div>
+                              <div class="cure-explain">
+                                <div class="cure-img-box">
+                                  <img src="../images/치료한약.png" alt="치료 한약 이미지" />
+                                </div>
+                                <div class="cure-text-box">
+                                  <p>치료 한약</p>
+                                  <p>항염증/뼈건강 촉진</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="cure-bottom-box flex">
+                              <div class="cure-left-box">
+                                <span class="left-txt">척추관절</span>
+                                <span class="left-txt">한방치료</span>
+                                <span class="left-txt">적응증</span>
+                              </div>
+                              <div class="cure-right-box flex flex-col">
+                                <div class="cure-bot-img-wrap flex">
+                                  <div class="cure-bot-1">
+                                    <div class="bot-img-box">
+                                      <img src="../images/추간판.png" alt="추간판 탈출증 이미지">
+                                    </div>
+                                    <div class="bot-txt">추간판 탈출증</div>
+                                  </div>
+                                  <div class="cure-bot-1">
+                                    <div class="bot-img-box">
+                                      <img src="../images/척추협착.png" alt="척추 협착증 이미지">
+                                    </div>
+                                    <div class="bot-txt">척추 협착증</div>
+                                  </div>
+                                  <div class="cure-bot-1">
+                                    <div class="bot-img-box">
+                                      <img src="../images/후관절증후군.png" alt="후관절증후군 이미지">
+                                    </div>
+                                    <div class="bot-txt">후관절증후군</div>
+                                  </div>
+    
+                                </div>
+                                <div class="cure-bot-img-wrap flex">
+                                  <div class="cure-bot-1">
+                                    <div class="bot-img-box">
+                                      <img src="../images/거북목.png" alt="거북목, 일자목 이미지">
+                                    </div>
+                                    <div class="bot-txt">거북목, 일자목</div>
+                                  </div>
+                                  <div class="cure-bot-1">
+                                    <div class="bot-img-box">
+                                      <img src="../images/좌골신경통.png" alt="좌골신경통 이미지">
+                                    </div>
+                                    <div class="bot-txt">좌골신경통</div>
+                                  </div>
+                                  <div class="cure-bot-1">
+                                    <div class="bot-img-box">
+                                      <img src="../images/척추측만증.png" alt="척추측만증 이미지">
+                                    </div>
+                                    <div class="bot-txt">척추측만증</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+    
+                            <div class="last-content">
+                              <div class="effect">
+                                <h1 class="effect-txt">치료 효과</h1>
+                              </div>
+                              <div class="expectation-wrap flex">
+                                <div class="expect-box">
+                                  <h2 class="expect-tit">
+                                    <img src="../images/체크1.png" alt="체크이미지">
+                                  </h2>
+                                  <p class="expect-sub">통증을 완화하고<br>염증을 예방합니다.</p>
+                                </div>
+                                <div class="expect-box">
+                                  <h2 class="expect-tit">
+                                    <img src="../images/체크1.png" alt="체크이미지">
+                                  </h2>
+                                  <p class="expect-sub">긴장된 근육을 <br>이완하고 강화합니다</p>
+                                </div>
+                                <div class="expect-box">
+                                  <h2 class="expect-tit">
+                                    <img src="../images/체크1.png" alt="체크이미지">
+                                  </h2>
+                                  <p class="expect-sub">굳거나 유착된 인대를 정상화 시킵니다.</p>
+                                </div>
+                                <div class="expect-box">
+                                  <h2 class="expect-tit">
+                                    <img src="../images/체크1.png" alt="체크이미지">
+                                  </h2>
+                                  <p class="expect-sub expect-sub-1">원활한 움직임을 만들어 <br>일상생활로 복귀 시킵니다.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+    
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="tab-content tab-content-2">
+                    <div class="tab-body-con mx-auto">
+                      <div class="body-1-tit body-2-tit">
+                        <h1 class="spine">디스크 통증</h1>
+                      </div>
+                      <div class="body-2">
+                        
+                      </div>
+                      <div class="perspective">
+                        <h1 class="per-txt">-나을 6대 핵심 치료원칙-</h1>
+                        <div class="per-box-wrap flex">
+                          <div class="per-1-wrap">
+                            <div class="per-box box1 flex">
+                              <div class="circle">
+                                <span class="cir-txt">통증 발생<br />과정 치료
+                                </span>
+                              </div>
+                              <div class="circle-txt">
+                                <span class="c-txt flex flex-col">
+                                  <h3 class="text-[1.7rem]">
+                                    허리-다리 통증 및 저림
+                                  </h3>
+                                  <p>
+                                    근막 -> 근육 -> 신경 순으로 치료
+                                    <br />통증이 시작된 원인이 제거되지
+                                    않으면<br />
+                                    통증이 개선되어도 추후 재발 가능성 있음.
+                                  </p>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="per-box flex box2">
+                              <div class="circle">
+                                <span class="cir-txt">
+                                  단계적 <br />약침 치료</span>
+                              </div>
+                              <div class="circle-txt">
+                                <span class="c-txt flex flex-col">
+                                  <h3 class="text-[1.7rem]">
+                                    질병군마다 알맞은 약침 약물 선정
+                                  </h3>
+                                  <p>
+                                    목적에 따른 약침 시술의 다양성<br />
+                                    (근막 이완, 항염증, 재생,신경 압박 해소)
+                                  </p>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="per-box flex box3">
+                              <div class="circle">
+                                <span class="cir-txt">만성질환<br />한약 재생<br />치료</span>
+                              </div>
+                              <div class="circle-txt">
+                                <span class="c-txt flex flex-col">
+                                  <h3 class="text-[1.7rem]">
+                                    환자분의 재생능력
+                                  </h3>
+                                  <p>
+                                    자생력 저하시 지속되는 만성질환엔<br />자생력을
+                                    높이는 한약 치료를 함.
+                                  </p>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="per-2-wrap">
+                            <div class="per-box box1 flex">
+                              <div class="circle">
+                                <span class="cir-txt">통증의<br />세분화
+                                  치료
+                                </span>
+                              </div>
+                              <div class="circle-txt">
+                                <span class="c-txt flex flex-col">
+                                  <h3 class="text-[1.7rem]">
+                                    모든 자세의 허리 통증
+                                  </h3>
+                                  <p>
+                                    자세에 따른 모든 허리 통증의 원인이
+                                    <br />다르므로 통증을 세분화하여 치료함.
+                                  </p>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="per-box flex box2">
+                              <div class="circle">
+                                <span class="cir-txt pt-[1.25rem]">
+                                  초음파 가이드<br />
+                                  정밀한<br />약침
+                                  치료</span>
+                              </div>
+                              <div class="circle-txt">
+                                <span class="c-txt flex flex-col">
+                                  <h3 class="text-[1.7rem]">
+                                    초음파 영상을 필요로 하는 질환군
+                                  </h3>
+                                  <p>
+                                    치료 단계에 따른 초음파 가이드<br />약침
+                                    시술을 함.
+                                  </p>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="per-box flex box3">
+                              <div class="circle">
+                                <span class="cir-txt">척추 구조이상<br />추나 교정치료</span>
+                              </div>
+                              <div class="circle-txt">
+                                <span class="c-txt flex flex-col">
+                                  <h3 class="text-[1.7rem]">
+                                    구조 이상으로 인한 통증
+                                  </h3>
+                                  <p>
+                                    거북목, 일자목, 골반경사, 라운드 숄더,<br />협착증
+                                    등 추나요법 교정치료를 시행함.
+                                  </p>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+    
+                      <section class="tab-2-section">
+                        <div class="tab-2-section-con mx-auto">
+                          <div class="disc-whole-box">
+                            <div class="disc-img-txt-box flex">
+                              <div class="neck-disc-img">
+                                <img src="../images/목디스크2.png" alt="목디스크이미지">
+    
+                              </div>
+                              <div class="disc-txt">
+                                <h2 class="disc-tit">목디스크 / 허리 디스크</h2>
+                              </div>
+                              <div class="waist disc-img">
+                                <img src="../images/허리디스크2.png" alt="허리디스크이미지">
+                              </div>
+                            </div>
+                            <div class="painkiller flex">
+                              <h1 class="painkiller-txt"><span>진통제</span>는 이제 <span>그만!</span></h1>
+                              <img src="../images/stop.png" alt="stop이미지">
+                            </div>
+                            <div class="disc-cure-box">
+                              <h1 class="disc-cure-tit">디스크 나을탕 <span>건강보험 적용!</span></h1>
+                            </div>
+                            <div class="disc-cure-content-box">
+                              <div class="disc-one-box flex">
+                                <img src="../images/알림.png" alt="알림이미지">
+                                <h2 class="disc-one-txt">디스크 나을탕으로 디스크 회복</h2>
+                              </div>
+                              <div class="disc-one-sub-box">
+                                <h3 class="disc-one-sub-txt">침, 약침으로 <span>염증제거</span></h3>
+                                <h3 class="disc-one-sub-txt">디스크 나을탕으로 <span>디스크 회복</span></h3>
+                              </div>
+                              <div class="disc-two-box flex">
+                                <img src="../images/알림.png" alt="알림이미지">
+                                <h2 class="disc-two-txt">1년에 20일치 본인부담금 30%</h2>
+                              </div>
+                              <div class="disc-two-sub-box">
+                                <h3 class="disc-two-sub-txt">20일치 이후 추가 처방은 보인부담금 100% <br>건강보험 적용</h3>
+    
+                              </div>
+                              <div class="disc-three-box flex">
+                                <img src="../images/알림.png" alt="알림이미지">
+                                <h2 class="disc-three-txt">디스크 나을탕 실손보험 혜택!</h2>
+                              </div>
+                              <div class="disc-three-sub-box">
+                                <h3 class="disc-three-sub-txt">건강 보험 적용으로, 실손의료보험 혜택 가능</h3>
+    
+                              </div>
+                              <div class="disc-four-box flex">
+                                <img src="../images/알림.png" alt="알림이미지">
+                                <h2 class="disc-four-txt">건강보험 되는 디스크 세트 치료</h2>
+                              </div>
+                              <div class="disc-four-sub-box">
+                                <h3 class="disc-four-sub-txt flex">
+                                  <div class="disc-number">01</div>
+                                  <p>추나 요법 : 1년에 20회 건강보험 적용</p>
+                                </h3>
+                                <h3 class="disc-four-sub-txt flex">
+                                  <div class="disc-number">02</div>
+                                  <p>디스크 나을탕 : 건강보험 적용</p>
+                                </h3>
+                                <h3 class="disc-four-sub-txt flex">
+                                  <div class="disc-number">03</div>
+                                  <p>침 + 부황 + 물리치료</p>
+                                </h3>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                      <div class="last-content">
+                        <div class="effect">
+                          <h1 class="effect-txt">치료 효과</h1>
+                        </div>
+                        <div class="expectation-wrap flex">
+                          <div class="expect-box">
+                            <h2 class="expect-tit">
+                              <img src="../images/체크1.png" alt="체크이미지">
+                            </h2>
+                            <p class="expect-sub">통증을 완화하고<br>염증을 예방합니다.</p>
+                          </div>
+                          <div class="expect-box">
+                            <h2 class="expect-tit">
+                              <img src="../images/체크1.png" alt="체크이미지">
+                            </h2>
+                            <p class="expect-sub">긴장된 주변 근육을 <br>이완하고 강화합니다</p>
+                          </div>
+                          <div class="expect-box">
+                            <h2 class="expect-tit">
+                              <img src="../images/체크1.png" alt="체크이미지">
+                            </h2>
+                            <p class="expect-sub">디스크로 눌린 신경을 <br>정상화 시킵니다.</p>
+                          </div>
+                          <div class="expect-box">
+                            <h2 class="expect-tit">
+                              <img src="../images/체크1.png" alt="체크이미지">
+                            </h2>
+                            <p class="expect-sub expect-sub-1">원활한 움직임을 만들어 <br>일상생활로 복귀 시킵니다.</p>
+                          </div>
+                        </div>
+                      </div>
+    
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="tab-content tab-content-3">
+                    <div class="tab-body-con mx-auto">
+                      <div class="body-1-tit body-2-tit">
+                        <h1 class="spine">체질맞춤한약</h1>
+                      </div>
+                      <div class="body-3">
+                        
+                      </div>
+                      <div class="perspective">
+                        <h1 class="per-txt">-나을 6대 핵심 치료원칙-</h1>
+                        <div class="per-box-wrap flex">
+                          <div class="per-1-wrap">
+                            <div class="per-box box1 flex">
+                              <div class="circle">
+                                <span class="cir-txt">통증 발생<br />과정 치료
+                                </span>
+                              </div>
+                              <div class="circle-txt">
+                                <span class="c-txt flex flex-col">
+                                  <h3 class="text-[1.7rem]">
+                                    허리-다리 통증 및 저림
+                                  </h3>
+                                  <p>
+                                    근막 -> 근육 -> 신경 순으로 치료
+                                    <br />통증이 시작된 원인이 제거되지
+                                    않으면<br />
+                                    통증이 개선되어도 추후 재발 가능성 있음.
+                                  </p>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="per-box flex box2">
+                              <div class="circle">
+                                <span class="cir-txt">
+                                  단계적 <br />약침 치료</span>
+                              </div>
+                              <div class="circle-txt">
+                                <span class="c-txt flex flex-col">
+                                  <h3 class="text-[1.7rem]">
+                                    질병군마다 알맞은 약침 약물 선정
+                                  </h3>
+                                  <p>
+                                    목적에 따른 약침 시술의 다양성<br />
+                                    (근막 이완, 항염증, 재생,신경 압박 해소)
+                                  </p>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="per-box flex box3">
+                              <div class="circle">
+                                <span class="cir-txt">만성질환<br />한약 재생<br />치료</span>
+                              </div>
+                              <div class="circle-txt">
+                                <span class="c-txt flex flex-col">
+                                  <h3 class="text-[1.7rem]">
+                                    환자분의 재생능력
+                                  </h3>
+                                  <p>
+                                    자생력 저하시 지속되는 만성질환엔<br />자생력을
+                                    높이는 한약 치료를 함.
+                                  </p>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="per-2-wrap">
+                            <div class="per-box box1 flex">
+                              <div class="circle">
+                                <span class="cir-txt">통증의<br />세분화
+                                  치료
+                                </span>
+                              </div>
+                              <div class="circle-txt">
+                                <span class="c-txt flex flex-col">
+                                  <h3 class="text-[1.7rem]">
+                                    모든 자세의 허리 통증
+                                  </h3>
+                                  <p>
+                                    자세에 따른 모든 허리 통증의 원인이
+                                    <br />다르므로 통증을 세분화하여 치료함.
+                                  </p>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="per-box flex box2">
+                              <div class="circle">
+                                <span class="cir-txt pt-[1.25rem]">
+                                  초음파 가이드<br />
+                                  정밀한<br />약침
+                                  치료</span>
+                              </div>
+                              <div class="circle-txt">
+                                <span class="c-txt flex flex-col">
+                                  <h3 class="text-[1.7rem]">
+                                    초음파 영상을 필요로 하는 질환군
+                                  </h3>
+                                  <p>
+                                    치료 단계에 따른 초음파 가이드<br />약침
+                                    시술을 함.
+                                  </p>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="per-box flex box3">
+                              <div class="circle">
+                                <span class="cir-txt">척추 구조이상<br />추나 교정치료</span>
+                              </div>
+                              <div class="circle-txt">
+                                <span class="c-txt flex flex-col">
+                                  <h3 class="text-[1.7rem]">
+                                    구조 이상으로 인한 통증
+                                  </h3>
+                                  <p>
+                                    거북목, 일자목, 골반경사, 라운드 숄더,<br />협착증
+                                    등 추나요법 교정치료를 시행함.
+                                  </p>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+    
+                      <section class="tab-3-section">
+                        <div class="tab-3-section-con mx-auto">
+                          <div class="medicine-whole-box">
+                            <div class="medi-wrap">
+                              <div class="medicine-tit">
+                                <h2 class="medi-txt">치료 효과와 안전성이 검증된 한약 <br>건강보험으로 보다 저렴하게</h2>
+                              </div>
+                              <div class="medi-sub-tit">
+                                <h1 class="medi-sub-txt">
+                                  첩약(탕약)<br><span>건강보험</span>적용
+                                </h1>
+                              </div>
+    
+                              <div class="insurance-box">
+                                <div class="insurance-con mx-auto">
+                                  <div class="silson">
+                                    <p class="silson-txt">실손/실비보험 적용 가능</p>
+                                  </div>
+                                  <div class="dollar">
+                                    <p class="dollar-txt">급여일수</p>
+                                  </div>
+                                  <div class="dollar-content-box flex ">
+                                    <div class="dollar-explain-box">
+                                      <div class="dollar-tit-box flex">
+                                        <img src="../images/체크.png" alt="체크된 이미지">
+                                        <p>질환별 첩약 10일분씩 2회 처방 - <span>20일</span></p>
+                                      </div>
+                                      <div class="dollar-tit-box flex">
+                                        <img src="../images/체크.png" alt="체크된 이미지">
+                                        <p>1인당 연간 2가지 질환 - <span>40일</span></p>
+                                      </div>
+                                    </div>
+                                    <div class="discount flex">
+                                      <p class="discount-txt">본인부담금</p>
+                                      <p class="discount-per">30%</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="grid__wrap">
+                                <div class="grid-1 items-box">
+    
+                                  <div class="grid-content-box flex">
+    
+                                    <img src="../images/안면마비.png" alt="안면마비 이미지">
+    
+                                    <div class="grid-txt-box">
+                                      <p class="gu">구안와사<br><span>안경신경마비</span></p>
+    
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="grid-2 items-box">
+                                  <div class="grid-content-box flex">
+                                    <img src="../images/중풍.png" alt="중풍 이미지">
+                                    <div class="grid-txt-box">
+                                      <p class="jung">중풍<br><span>뇌혈관질환<br>후유증</span></p>
+    
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="grid-3 items-box">
+                                  <div class="grid-content-box flex">
+                                    <img src="../images/생리통.png" alt="생리통 이미지">
+                                    <div class="grid-txt-box">
+                                      <p class="sang">생리통<br><span>월경통</span></p>
+    
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="grid-4 items-box">
+                                  <div class="grid-content-box flex">
+                                    <img src="../images/기능성소화장애.png" alt="기능성소화장애 이미지">
+                                    <div class="grid-txt-box">
+                                      <p class="gi">기능성<br><span>소화질환</span></p>
+    
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="grid-5 items-box">
+                                  <div class="grid-content-box flex">
+                                    <img src="../images/허리디스크.png" alt="허리디스크 이미지">
+                                    <div class="grid-txt-box">
+                                      <p class="huri">허리디스크<br><span>요추 추간판<br>탈출증</span></p>
+    
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="grid-6 items-box">
+                                  <div class="grid-content-box flex">
+                                    <img src="../images/비염.png" alt="비염 이미지">
+                                    <div class="grid-txt-box">
+                                      <p class="alle">알레르기<br><span>비염</span></p>
+    
+                                    </div>
+                                  </div>
+                                </div>
+    
+                              </div>
+    
+                              <div class="medi-last-box">
+                                <h3 class="medi-last-txt">치료와 보험 적용에 대한 자세한 상담을 받아보세요.</h3>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                      <div class="last-content">
+                        <div class="effect">
+                          <h1 class="effect-txt">치료 효과</h1>
+                        </div>
+                        <div class="expectation-wrap flex">
+                          <div class="expect-box">
+                            <h2 class="expect-tit">
+                              <img src="../images/체크1.png" alt="체크이미지">
+                            </h2>
+                            <p class="expect-sub">통증을 완화하고<br>염증을 예방합니다.</p>
+                          </div>
+                          <div class="expect-box">
+                            <h2 class="expect-tit">
+                              <img src="../images/체크1.png" alt="체크이미지">
+                            </h2>
+                            <p class="expect-sub">긴장된 주변 근육을 <br>이완하고 강화합니다</p>
+                          </div>
+                          <div class="expect-box">
+                            <h2 class="expect-tit">
+                              <img src="../images/체크1.png" alt="체크이미지">
+                            </h2>
+                            <p class="expect-sub">디스크로 눌린 신경을 <br>정상화 시킵니다.</p>
+                          </div>
+                          <div class="expect-box">
+                            <h2 class="expect-tit">
+                              <img src="../images/체크1.png" alt="체크이미지">
+                            </h2>
+                            <p class="expect-sub expect-sub-1">원활한 움직임을 만들어 <br>일상생활로 복귀 시킵니다.</p>
+                          </div>
+                        </div>
+                      </div>
+    
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="tab-content tab-content-4">
+                    <div class="tab-body-con mx-auto">
+                      <div class="body-1-tit body-4-tit">
+                        <h1 class="spine">안면마비</h1>
+                      </div>
+                      <div class="body-4">
+                        <h2 class="body-4-txt">
+                         
+    
+                        </h2>
+                      </div>
+                      <div class="perspective">
+                        <h1 class="per-txt">-나을 6대 핵심 치료원칙-</h1>
+                        <div class="per-box-wrap flex">
+                          <div class="per-1-wrap">
+                            <div class="per-box box1 flex">
+                              <div class="circle">
+                                <span class="cir-txt">통증 발생<br />과정 치료
+                                </span>
+                              </div>
+                              <div class="circle-txt">
+                                <span class="c-txt flex flex-col">
+                                  <h3 class="text-[1.7rem]">
+                                    허리-다리 통증 및 저림
+                                  </h3>
+                                  <p>
+                                    근막 -> 근육 -> 신경 순으로 치료
+                                    <br />통증이 시작된 원인이 제거되지
+                                    않으면<br />
+                                    통증이 개선되어도 추후 재발 가능성 있음.
+                                  </p>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="per-box flex box2">
+                              <div class="circle">
+                                <span class="cir-txt">
+                                  단계적 <br />약침 치료</span>
+                              </div>
+                              <div class="circle-txt">
+                                <span class="c-txt flex flex-col">
+                                  <h3 class="text-[1.7rem]">
+                                    질병군마다 알맞은 약침 약물 선정
+                                  </h3>
+                                  <p>
+                                    목적에 따른 약침 시술의 다양성<br />
+                                    (근막 이완, 항염증, 재생,신경 압박 해소)
+                                  </p>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="per-box flex box3">
+                              <div class="circle">
+                                <span class="cir-txt">만성질환<br />한약 재생<br />치료</span>
+                              </div>
+                              <div class="circle-txt">
+                                <span class="c-txt flex flex-col">
+                                  <h3 class="text-[1.7rem]">
+                                    환자분의 재생능력
+                                  </h3>
+                                  <p>
+                                    자생력 저하시 지속되는 만성질환엔<br />자생력을
+                                    높이는 한약 치료를 함.
+                                  </p>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="per-2-wrap">
+                            <div class="per-box box1 flex">
+                              <div class="circle">
+                                <span class="cir-txt">통증의<br />세분화
+                                  치료
+                                </span>
+                              </div>
+                              <div class="circle-txt">
+                                <span class="c-txt flex flex-col">
+                                  <h3 class="text-[1.7rem]">
+                                    모든 자세의 허리 통증
+                                  </h3>
+                                  <p>
+                                    자세에 따른 모든 허리 통증의 원인이
+                                    <br />다르므로 통증을 세분화하여 치료함.
+                                  </p>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="per-box flex box2">
+                              <div class="circle">
+                                <span class="cir-txt pt-[1.25rem]">
+                                  초음파 가이드<br />
+                                  정밀한<br />약침
+                                  치료</span>
+                              </div>
+                              <div class="circle-txt">
+                                <span class="c-txt flex flex-col">
+                                  <h3 class="text-[1.7rem]">
+                                    초음파 영상을 필요로 하는 질환군
+                                  </h3>
+                                  <p>
+                                    치료 단계에 따른 초음파 가이드<br />약침
+                                    시술을 함.
+                                  </p>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="per-box flex box3">
+                              <div class="circle">
+                                <span class="cir-txt">척추 구조이상<br />추나 교정치료</span>
+                              </div>
+                              <div class="circle-txt">
+                                <span class="c-txt flex flex-col">
+                                  <h3 class="text-[1.7rem]">
+                                    구조 이상으로 인한 통증
+                                  </h3>
+                                  <p>
+                                    거북목, 일자목, 골반경사, 라운드 숄더,<br />협착증
+                                    등 추나요법 교정치료를 시행함.
+                                  </p>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+    
+                      <section class="tab-4-section">
+                        <div class="tab-4-section-con mx-auto">
+                          <div class="face-whole-wrap flex flex-col flex-shrink-0">
+                            <div class="face-info-con mx-auto">
+                              <div class="face-info-box">
+    
+                                <div class="face-info-tit">
+                                  <h1 class="face-info-txt">안면신경마비</h1>
+                                </div>
+                                <div class="face-info-main-tit">
+                                  <h2 class="face-info-main-txt"><span>골든타임</span>을<br>놓치지 마세요.</h2>
+                                </div>
+    
+                                <div class="face-sub-tit">
+                                  <p class="face-sub-txt">초기에 치료를 제대로 받지 않을 경우, 재발 혹은 영구적인<br>후유증이 남을 수 있어 제때 치료 받는 것이 중요합니다.</p>
+                                </div>
+    
+                              </div>
+                              <div class="face-cure-box">
+                                <div class="face-grid-wrap">
+                                  <div class="face-items">
+                                    <div class="face-items-img-box"><img src="../images/얼굴염증.png" alt="신경염증 제거 이미지"></div>
+                                    <div class="face-items-text-box">
+                                      <h2 class="face-items-txt">신경의<br>염증을 제거</h2>
+                                    </div>
+                                  </div>
+                                  <div class="face-items">
+                                    <div class="face-items-img-box"><img src="../images/안면부순환.png" alt="안면부 혈액순환 촉진"></div>
+                                    <div class="face-items-text-box">
+                                      <h2 class="face-items-txt">두뇌와 안면부의<br>혈액순환 촉진</h2>
+                                    </div>
+                                  </div>
+                                  <div class="face-items">
+                                    <div class="face-items-img-box"><img src="../images/한약치료.png" alt="면역력 이미지"></div>
+                                    <div class="face-items-text-box">
+                                      <h2 class="face-items-txt">면역력을 키워<br>재발을 방지</h2>
+                                    </div>
+                                  </div>
+                                  <div class="face-items">
+                                    <div class="face-items-img-box"><img src="../images/근육신경재생.png" alt="손상된 신경과 근육 이미지"></div>
+                                    <div class="face-items-text-box">
+                                      <h2 class="face-items-txt">손상된 신경과<br>근육을 회복</h2>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                      <div class="last-content">
+                        <div class="effect">
+                          <h1 class="effect-txt">치료 효과</h1>
+                        </div>
+                        <div class="expectation-wrap flex">
+                          <div class="expect-box">
+                            <h2 class="expect-tit">
+                              <img src="../images/체크1.png" alt="체크이미지">
+                            </h2>
+                            <p class="expect-sub">통증을 완화하고<br>염증을 예방합니다.</p>
+                          </div>
+                          <div class="expect-box">
+                            <h2 class="expect-tit">
+                              <img src="../images/체크1.png" alt="체크이미지">
+                            </h2>
+                            <p class="expect-sub">얼굴 주변 근육을 <br>이완하고 강화합니다</p>
+                          </div>
+                          <div class="expect-box">
+                            <h2 class="expect-tit">
+                              <img src="../images/체크1.png" alt="체크이미지">
+                            </h2>
+                            <p class="expect-sub">손상된 근육, 신경을 <br>정상화 시킵니다.</p>
+                          </div>
+                          <div class="expect-box">
+                            <h2 class="expect-tit">
+                              <img src="../images/체크1.png" alt="체크이미지">
+                            </h2>
+                            <p class="expect-sub expect-sub-1">원활한 움직임을 만들어 <br>일상생활로 복귀 시킵니다.</p>
+                          </div>
+                        </div>
+                      </div>
+    
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="tab-content tab-content-5">
+                    <div class="tab-body-con mx-auto">
+                      <div class="body-1-tit body-5-tit">
+                        <h1 class="spine">초음파가이드약침</h1>
+                      </div>
+                      <div class="body-5">
+                   
+                      </div>
+                      <div class="perspective">
+                        <h1 class="per-txt">-나을 6대 핵심 치료원칙-</h1>
+                        <div class="per-box-wrap flex">
+                          <div class="per-1-wrap">
+                            <div class="per-box box1 flex">
+                              <div class="circle">
+                                <span class="cir-txt">통증 발생<br />과정 치료
+                                </span>
+                              </div>
+                              <div class="circle-txt">
+                                <span class="c-txt flex flex-col">
+                                  <h3 class="text-[1.7rem]">
+                                    허리-다리 통증 및 저림
+                                  </h3>
+                                  <p>
+                                    근막 -> 근육 -> 신경 순으로 치료
+                                    <br />통증이 시작된 원인이 제거되지
+                                    않으면<br />
+                                    통증이 개선되어도 추후 재발 가능성 있음.
+                                  </p>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="per-box flex box2">
+                              <div class="circle">
+                                <span class="cir-txt">
+                                 단계적 <br />약침 치료</span>
+                              </div>
+                              <div class="circle-txt">
+                                <span class="c-txt flex flex-col">
+                                  <h3 class="text-[1.7rem]">
+                                    질병군마다 알맞은 약침 약물 선정
+                                  </h3>
+                                  <p>
+                                    목적에 따른 약침 시술의 다양성<br />
+                                    (근막 이완, 항염증, 재생,신경 압박 해소)
+                                  </p>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="per-box flex box3">
+                              <div class="circle">
+                                <span class="cir-txt">만성질환<br />한약 재생<br />치료</span>
+                              </div>
+                              <div class="circle-txt">
+                                <span class="c-txt flex flex-col">
+                                  <h3 class="text-[1.7rem]">
+                                    환자분의 재생능력
+                                  </h3>
+                                  <p>
+                                    자생력 저하시 지속되는 만성질환엔<br />자생력을
+                                    높이는 한약 치료를 함.
+                                  </p>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="per-2-wrap">
+                            <div class="per-box box1 flex">
+                              <div class="circle">
+                                <span class="cir-txt">통증의<br />세분화
+                                  치료
+                                </span>
+                              </div>
+                              <div class="circle-txt">
+                                <span class="c-txt flex flex-col">
+                                  <h3 class="text-[1.7rem]">
+                                    모든 자세의 허리 통증
+                                  </h3>
+                                  <p>
+                                    자세에 따른 모든 허리 통증의 원인이
+                                    <br />다르므로 통증을 세분화하여 치료함.
+                                  </p>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="per-box flex box2">
+                              <div class="circle">
+                                <span class="cir-txt pt-[1.25rem]">
+                                  초음파 가이드<br />
+                                  정밀한<br />약침
+                                  치료</span>
+                              </div>
+                              <div class="circle-txt">
+                                <span class="c-txt flex flex-col">
+                                  <h3 class="text-[1.7rem]">
+                                    초음파 영상을 필요로 하는 질환군
+                                  </h3>
+                                  <p>
+                                    치료 단계에 따른 초음파 가이드<br />약침
+                                    시술을 함.
+                                  </p>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="per-box flex box3">
+                              <div class="circle">
+                                <span class="cir-txt">척추 구조이상<br />추나 교정치료</span>
+                              </div>
+                              <div class="circle-txt">
+                                <span class="c-txt flex flex-col">
+                                  <h3 class="text-[1.7rem]">
+                                    구조 이상으로 인한 통증
+                                  </h3>
+                                  <p>
+                                    거북목, 일자목, 골반경사, 라운드 숄더,<br />협착증
+                                    등 추나요법 교정치료를 시행함.
+                                  </p>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+    
+                      <section class="tab-5-section">
+                        <div class="tab-5-section-con mx-auto">
+                          <div class="supersonic-whole-wrap">
+                            <div class="supersonic-con mx-auto flex flex-col flex-shrink-0">
+                              <div class="sonic-info-box">
+                                <div class="sonic-tit-box">
+                                  <h1 class="sonic-tit-txt-1">초음파 가이드</h1>
+                                  <h1 class="sonic-tit-txt-2">약침 치료</h1>
+                                </div>
+                                <div class="qs-1-box pl-[2rem]">
+                                  <h3 class="qs-txt">초음파 의료기기란?</h3>
+                                  <p class="answer-qs">초음파를 이용하여 몸 내부의 근육, 인대, 신경, 혈관 등 인체조직을 확인할 수 있는 기기</p>
+                                </div>
+                                <div class="qs-2-box pl-[2rem]">
+                                  <h3 class="qs-txt">초음파 가이드 약침치료란?</h3>
+                                  <p class="answer-qs">초음파 가이드 약침 치료는 초음파로 인체 내부 조직을 촬영하면서 약침 시술을 하여,<br>약침 바늘이 목표한 인체 구조에 정확히 닿을 수 있도록 하는 술기입니다.</p>
+                                </div>
+                                <div class="sonic-img-box flex">
+                                  <div class="sonic-img"><img src="../images/초음파.PNG" alt="초음파약침치료 이미지"></div>
+                                  <div class="sonic-img"><img src="../images/초음파약침.png" alt="초음파약침치료 이미지2"></div>
+                                  <div class="sonic-img"><img src="../images/초음파화면.png" alt="초음파 화면사진 이미지"></div>
+                                </div>
+                              </div>
+                              <div class="sonic-simple-box">
+                                <div class="sonic-advantage">
+                                  <p class="advantage-txt">초음파 가이드 약침 시술의 <span>장점</span></p>
+                                </div>
+                                <div class="sonic-point-box flex">
+                                  <div class="sonic-left-box">
+                                    <div class="sonic-left-img-box">
+                                      <img src="../images/초음파한의사.png" alt="초음파와 한의사 이미지">
+                                    </div>
+                                  </div>
+                                  <div class="sonic-right-box">
+                                    <div class="sonic-top-box flex">
+                                      <div class="sonic-1-txt sonic-last">
+                                        <p> 정확한 <br>위치에<br>시술 가능</p>
+                                      </div>
+                                      <div class="sonic-2-txt sonic-last">
+                                        <p>병변의<br>경과 관찰 <br>가능</p>
+                                      </div>
+                                      <div class="sonic-3-txt sonic-last">
+                                        <p>진단의<br>정확도<br>증가</p>
+                                      </div>
+                                    </div>
+                                    <div class="sonic-bottom-box flex">
+                                      <div class="sonic-4-txt sonic-last">
+                                        <p>광범위한<br>질환에<br> 적용 가능</p>
+                                      </div>
+                                      <div class="sonic-5-txt sonic-last">
+                                        <p>디스크<br>질환의<br>비수술 치료</p>
+                                      </div>
+                                      <div class="sonic-6-txt sonic-last">
+                                        <p>집중치료로<br>빠른 회복</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                      <div class="last-content">
+                        <div class="effect">
+                          <h1 class="effect-txt">치료 효과</h1>
+                        </div>
+                        <div class="expectation-wrap flex">
+                          <div class="expect-box">
+                            <h2 class="expect-tit">
+                              <img src="../images/체크1.png" alt="체크이미지">
+                            </h2>
+                            <p class="expect-sub">통증을 완화하고<br>염증을 예방합니다.</p>
+                          </div>
+                          <div class="expect-box">
+                            <h2 class="expect-tit">
+                              <img src="../images/체크1.png" alt="체크이미지">
+                            </h2>
+                            <p class="expect-sub">얼굴 주변 근육을 <br>이완하고 강화합니다</p>
+                          </div>
+                          <div class="expect-box">
+                            <h2 class="expect-tit">
+                              <img src="../images/체크1.png" alt="체크이미지">
+                            </h2>
+                            <p class="expect-sub">손상된 근육, 신경을 <br>정상화 시킵니다.</p>
+                          </div>
+                          <div class="expect-box">
+                            <h2 class="expect-tit">
+                              <img src="../images/체크1.png" alt="체크이미지">
+                            </h2>
+                            <p class="expect-sub expect-sub-1">원활한 움직임을 만들어 <br>일상생활로 복귀 시킵니다.</p>
+                          </div>
+                        </div>
+                      </div>
+    
+                    </div>
+                  </div>
+                </li>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <!-- footer	 -->
+      <footer class="footer-wrap">
+        <div class="footer-con mx-auto flex">
+          <div class="footer-map">
+            <div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d203061.99320381702!2d126.69158413587887!3d37.32253120198668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b6f875ae27c11%3A0x60f9dbb76d8a07e7!2z64KY7J2E7ZWc7J2Y7JuQ!5e0!3m2!1sko!2skr!4v1740937935661!5m2!1sko!2skr" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+          <div class="footer-content-box">
+            <div class="fo-content-con mx-auto">
+              <div class="footer-tit">
+                <h1 class="fo-txt">CONTACT</h1>
+              </div>
+              <div class="footer-addr flex">
+                <h2 class="fo-addr flex">
+                  <img src="../images/주소.png" alt="주소이미지" />주소
+                </h2>
+                <p class="addr">경기도 안산시 단원구 고잔O길 OOO(중앙동)</p>
+              </div>
+              <div class="cure-time flex">
+                <h2 class="times flex">
+                  <img src="../images/진료시간.png" alt="진료시간 이미지" />진료시간
+                </h2>
+                <div class="times-content">
+                  <p class="date flex">평일</p>
+    
+                  <p class="date-2">주말</p>
+                  <p class="date-3">점심시간</p>
+    
+                </div>
+                <div class="clock">
+                  <p class="time-1">오전 09:00 ~ 오후 08:30</p>
+                  <p class="time-2">오전 10:00 ~ 오후 03:00</p>
+                  <p class="lunch">오후 01:00 ~ 오후 02:00</p>
+                </div>
+    
+              </div>
+              <div class="notice">
+                <p class="no-1">※ 주말은 점심시간 없이 진료</p>
+                <p class="no-2">※ 공휴일은 단축진료</p>
+              </div>
+    
+              <div class="call flex">
+                <h2 class="calling flex">
+                  <img src="../images/대표전화.png" alt="대표전화 이미지" />대표전화
+                </h2>
+                <p class="number">02-1234-5678</p>
+              </div>
+              <div class="kakaotalk flex">
+                <h2 class="talktalk flex">
+                  <img src="../images/카카오톡이미지.png" alt="카카오톡 이미지" />
+                  SNS
+                </h2>
+                <div class="sns-img flex">
+                  <img src="../images/sns카카오톡.png" alt="카카오톡 로고" />
+                  <img src="../images/유튜브이미지.png" alt="유튜브" />
+                  <img src="../images/네이버블로그.png" alt="네이버블로그" />
+    
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="read-box">
+          <div class="read flex">
+            <p>이용약관</p>
+            <p>개인정보처리방침</p>
+            <p>비급여안내</p>
+          </div>
+        </div>
+      </footer>
+      <footer class="footer-2">
+        <div class="footer__bottom-box">
+          <div class="use-box">
+            <p class="address text-[0.8rem]">
+              주소 : 경기도 안산시 단원구 고잔O길 OOO-OO, O층
+            </p>
+            <p class="enroll-num text-[0.9rem]">사업자 등록번호 : 1234-5678</p>
+            <p class="boss text-[0.9rem]">대표자 : 김OO</p>
+            <p class="fax text-[0.9rem]">팩스 : 02-000-0000</p>
+          </div>
+          <div class="copyright">
+            <p>
+              Copyright 2025 ㅣ Naeul HOSPITAL OF KOREAN MEDICINE l All Rights
+              Reserved
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+  </body>
+</html>
